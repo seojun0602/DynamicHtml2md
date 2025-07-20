@@ -55,6 +55,7 @@ function getHtml(url, callback) {
 
     let uiTask = function() {
         try {
+            //getContext must be implemented on java
             let context = App.getContext();
             let webView = new android.webkit.WebView(context);
             webView.getSettings().setJavaScriptEnabled(true);
@@ -105,12 +106,14 @@ function getHtml(url, callback) {
         }
     };
 
+    //runOnUiThread must be implemented on java
     App.runOnUiThread(uiTask, function(error, result) {
         if (error) {
             state.error = error.toString();
             state.isDone = true;
         }
     });
+    
 
     let timeout = 30000; 
     let waited = 0;

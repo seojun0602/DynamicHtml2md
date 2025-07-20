@@ -2,6 +2,7 @@
    DynamicHtml2md. 2025.07.20
    Author: seojun0602
    functions: getHtml, html2md
+   WIP: 계속 움직이는 요소가 있으면 무한 대기를 하는 버그가 있음. 리런
 */
 
 /**

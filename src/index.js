@@ -2,7 +2,6 @@
    DynamicHtml2md. 2025.07.20
    Author: seojun0602
    functions: getHtml, html2md
-   WIP: 계속 움직이는 요소가 있으면 무한 대기를 하는 버그가 있음. 리런
 */
 
 /**
@@ -19,26 +18,37 @@ function getHtml(url, callback) {
     };
 
     const o = `
-        (function() {
-            window.signalScrapingComplete = function() {
-                document.body.setAttribute('scraping-complete', 'true');
-            };
+(function() {
+    window.signalScrapingComplete = function() {
+        document.body.setAttribute('scraping-complete', 'true');
+    };
 
-            let debounceTimer;
-            const observer = new MutationObserver(function() {
-                clearTimeout(debounceTimer);
-                debounceTimer = setTimeout(window.signalScrapingComplete, 1500); 
-            });
+    let debounceTimer;
+    let lastMutationTime = Date.now();
 
-            observer.observe(document.body, {
-                childList: true,
-                subtree: true,
-                attributes: true
-            });
+    const observer = new MutationObserver(function(mutationsList) {
+        lastMutationTime = Date.now();
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            if (Date.now() - lastMutationTime >= 1500) {
+                window.signalScrapingComplete();
+                observer.disconnect();
+            }
+        }, 1000);
+    });
 
-            debounceTimer = setTimeout(window.signalScrapingComplete, 2000);
-        })();
-    `, f = `
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        characterData: true
+    });
+
+    setTimeout(() => {
+        window.signalScrapingComplete();
+        observer.disconnect();
+    }, 10000);
+})();`, f = `
         (function() {
             const clonedBody = document.documentElement.cloneNode(true);
             const allElements = clonedBody.querySelectorAll('*');

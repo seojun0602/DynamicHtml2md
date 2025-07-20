@@ -1,10 +1,10 @@
-/* 대충 src/index.js 에 있는 함수들... */
+let {dh2md} = require("../src/index.js");
 
 let url = "https://ccentury.dothome.co.kr/Ccentury/DTD/rank/Playlog.php";
-getHtml(url, function(error, html) {
+dh2md(url, function(error, html) {
     if (error) {
         console.error(error.message);
         return;
     }
-    console.log(html2md(html));
+    console.log(html);
 });

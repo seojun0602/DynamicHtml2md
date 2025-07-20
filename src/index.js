@@ -10,7 +10,7 @@
  * @param {function(error, html)} callback
 */
 
-function getHtml(url, callback) {
+function getHtml(url, callback, options = {}) {
     let state = {
         html: null,
         error: null,
@@ -18,7 +18,7 @@ function getHtml(url, callback) {
     };
     
     //최대 대기 시간 = 10000ms;
-    const m = 10000, o = `
+    const m = (options.maxwt ?? 10000), o = `
 (function() {
     window.signalScrapingComplete = function() {
         document.body.setAttribute('scraping-complete', 'true');
@@ -48,7 +48,7 @@ function getHtml(url, callback) {
     setTimeout(() => {
         window.signalScrapingComplete();
         observer.disconnect();
-    }, m);
+    }, `+m+`);
 })();`, f = `
         (function() {
             const clonedBody = document.documentElement.cloneNode(true);
@@ -127,7 +127,7 @@ function getHtml(url, callback) {
     });
     
 
-    let timeout = 30000; 
+    let timeout = (options.timeout ?? 30000);
     let waited = 0;
     while (!state.isDone && waited < timeout) {
         try {
@@ -265,7 +265,13 @@ function html2md(html) {
     return markdown.trim();
 }
 
-function DynamicHtml2md(url, callback, options = {}) {
+/**
+ * getHtml. 웹뷰 기반으로 동적 웹페이지의 HTML을 가져오는 함수.
+ * @param {string} url
+ * @param {function(error, html)} callback
+ * @param {Object} options - WIP
+*/
+function dh2md(url, callback, options = {}) {
     getHtml(url, (err, html) => {
         if (err) return callback(err, null);
         let markdown = html2md(html);
@@ -276,5 +282,5 @@ function DynamicHtml2md(url, callback, options = {}) {
 module.exports = {
     getHtml,
     html2md,
-    DynamicHtml2md
+    dh2md
 };

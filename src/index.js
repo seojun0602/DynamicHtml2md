@@ -264,3 +264,17 @@ function html2md(html) {
 
     return markdown.trim();
 }
+
+function DynamicHtml2md(url, callback, options = {}) {
+    getHtml(url, (err, html) => {
+        if (err) return callback(err, null);
+        let markdown = html2md(html);
+        callback(null, markdown);
+    }, options);
+}
+
+module.exports = {
+    getHtml,
+    html2md,
+    DynamicHtml2md
+};

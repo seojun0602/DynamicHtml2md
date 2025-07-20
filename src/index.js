@@ -16,8 +16,9 @@ function getHtml(url, callback) {
         error: null,
         isDone: false
     };
-
-    const o = `
+    
+    //최대 대기 시간 = 10000ms;
+    const m = 10000, o = `
 (function() {
     window.signalScrapingComplete = function() {
         document.body.setAttribute('scraping-complete', 'true');
@@ -47,7 +48,7 @@ function getHtml(url, callback) {
     setTimeout(() => {
         window.signalScrapingComplete();
         observer.disconnect();
-    }, 10000);
+    }, m);
 })();`, f = `
         (function() {
             const clonedBody = document.documentElement.cloneNode(true);

@@ -6,5 +6,5 @@ getHtml(url, function(error, html) {
         console.error(error.message);
         return;
     }
-    console.log(htmlToMarkdown(html));
+    console.log(html2md(html));
 });

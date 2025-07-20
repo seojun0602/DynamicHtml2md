@@ -275,7 +275,7 @@ function html2md(html) {
  * dh2md. url을 html을 마크다운로 변환하는 함수.
  * @param {string} url
  * @param {function(error, markdown)} callback
- * @param {Object} options
+ * @param {Object} options(maxwt(ms), timeout(ms))
 */
 function dh2md(url, callback, options = {}) {
     getHtml(url, (err, html) => {

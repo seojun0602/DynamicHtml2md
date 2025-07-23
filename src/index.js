@@ -224,7 +224,7 @@ function html2md(html) {
                 headerProcessed = true;
             }
         });
-        return tableMarkdown + '\n';
+        return '\n' + tableMarkdown + '\n';
     });
 
     markdown = markdown.replace(/<img[^>]*>/gi, function(imgTag) {
@@ -278,7 +278,10 @@ function html2md(html) {
             markdown += '```json\n' + (jsonString ?? "") + '\n```\n\n';
         });
     }
-
+    
+    markdown = markdown.replace(/^[ \t]+/gm, '');
+    markdown = markdown.replace(/(\s*\n){3,}/g, '\n\n'); 
+    
     return markdown.trim();
 }
 

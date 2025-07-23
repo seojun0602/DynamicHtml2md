@@ -1,6 +1,6 @@
 let {dh2md, getHtml} = require("DynamicHtml2md");
 
-let url = "https://ccentury.dothome.co.kr/Ccentury/DTD/rank/Playlog.php";
+let url = "https://www.kobis.or.kr/kobis/business/main/main.do";
 
 let options = {
     maxwt: 10000,

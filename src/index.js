@@ -161,6 +161,9 @@ function getHtml(url, callback, options = {}) {
 function html2md(html) {
 
     let extractedJsonData = [];
+    
+    html = html.replace(/(<tbody[\s\S]*?<\/tbody>)/gi, '<table>$1</table>');
+    html = html.replace(/<ruby[\s\S]*?<\/ruby>/gi, function(ruby){ return ruby.replace(/<rp>[\s\S]*?<\/rp>/gi, '').replace(/<rt>([\s\S]*?)<\/rt>/gi, '($1)').replace(/<[^>]+>/g, '');});
 
     let processedHtml = html.replace(/<br[^>]*>/gi, '\n');
     processedHtml = processedHtml.replace(/<\/p>/gi, '</p>\n');

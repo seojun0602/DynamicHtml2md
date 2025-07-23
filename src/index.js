@@ -65,9 +65,13 @@ function getHtml(url, callback, options = {}) {
 
     let uiTask = function() {
         try {
-             // getContext must be implemented on java
+            // getContext must be implemented on java
             let context = App.getContext();
             let webView = new android.webkit.WebView(context);
+            let cookieManager = android.webkit.CookieManager.getInstance();
+            cookieManager.setAcceptCookie(true);
+            cookieManager.setAcceptThirdPartyCookies(webView, true);
+            webView.getSettings().setUserAgentString(options.userAgent ?? "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36");
             webView.getSettings().setJavaScriptEnabled(true);
             webView.getSettings().setDomStorageEnabled(true);
 
@@ -117,6 +121,7 @@ function getHtml(url, callback, options = {}) {
             state.isDone = true;
         }
     };
+    
     // runOnUiThread must be implemented on java
     App.runOnUiThread(uiTask, function(error, result) {
         if (error) {

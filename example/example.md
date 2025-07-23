@@ -1,230 +1,1422 @@
-D.T.D Playlog.php
+KOFIC 영화관 입장권 통합전산망(2)
 
-        ☰
+        **메인 컨텐츠 바로가기**
+        [일일 박스오피스](#cont_rank)
+        [KOBIS 주요지표](#cont_data)
+        [개봉 예정작](#cont_released)
+        [한국영화 제작 상황판](#cont_making)
+        [공지사항](#cont_notice)
 
-![](/DeadTown_Defense.png)
+    \t
+            
+# [![KOBIS 영화관 입장권 통합 전산망](/kobis/web/comm/images/comm/logo_comm.png)
+](/kobis/business/main/main.do)
 
-        ![](/logo_navercafe.png)
+            \t
+            \t            \t
+                
+                    검색
 
-        Dead Town Defense 메인 페이지
+                            영화정보
+                            통합검색
 
-        Normal 랭킹
+                    검색
 
-        Hard 랭킹
+               \t[![](/kobis/web/comm/images/main/head_ico1.png)
+](/kobis/business/comm/bord/listMyTip.do?bizLogicType=3)
+               \t
 
-Hell 랭킹
+                \t
+\t                \t\t* [회원가입](/kobis/business/comm/user/openRegiUser.do)
 
-# D.T.D Playlog
+\t\t\t\t\t\t\t* [로그인](/kobis/business/comm/user/openLogin.do)
 
-### 최근 200개의 플레이 기록입니다. 같은 UID는 같은 색상으로 표시됩니다.
+\t                \t
 
-### 각 항목을 클릭하여 그 유저의 프로필 페이지로 이동할 수 있습니다.
+        \t\t
+\t\t
+\t\t\t
+## 사이트 메뉴
 
-### 2024년 10월 5일, 오류로 전체 유저 수가 초기화되었습니다.
+\t\t\t
+\t\t\t \t
+\t\t\t \t
+\t\t\t \t\t* \t\t\t \t\t\t[
+\t\t\t \t\t\t\t영화정보검색
+\t\t\t \t\t\t](javascript:;)
+\t\t\t \t\t\t
+\t\t\t \t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t\t\t \t\t\t\t\t\t
+\t\t\t\t                                영화
+\t\t\t\t                                영화정보
+\t\t\t\t                            
 
-(최근 3000개 기록에서) 플레이한 유저의 수:1058명
-오늘 플레이 유저:13명
-생성된 UID 수(총 유저):271명
+\t\t\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[영화](/kobis/business/mast/mvie/searchMovieList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[영화정보](/kobis/business/mast/mvie/searchMovieList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
 
-  | UID | 난이도 | 생존일수 | 점수 배율 | 스코어 | 맵 이름 | 시간 |
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[개봉스케줄](/kobis/business/mast/mvie/findOpenScheduleList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[한국영화 제작상황판](/kobis/business/mast/mvie/searchPrdtList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[독립·예술영화](/kobis/business/mast/mvie/findDiverMovList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[영화인](/kobis/business/mast/peop/searchPeopleList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[영화사](/kobis/business/mast/comp/searchCompanyList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[영화상영관](/kobis/business/mast/thea/findTheaterInfoList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[영화상영관정보](/kobis/business/mast/thea/findTheaterInfoList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[지역별 영화상영관현황](/kobis/business/mast/thea/findAreaTheaterStat.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[상영내역](/kobis/business/mast/thea/findShowHistorySc.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[상영스케줄](/kobis/business/mast/thea/findTheaterSchedule.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[스크린쿼터내역](/kobis/business/mast/thea/findScreenQuota.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[전용상영관 현황](/kobis/business/mast/thea/findArtScreenStat.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[전용상영관 상영내역](/kobis/business/mast/thea/findArtShowHistory.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[영화제](/kobis/business/mast/fest/searchUserFestInfoList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[코드검색 및 등록](/kobis/business/mast/mvie/searchUserMovCdList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[영화코드](/kobis/business/mast/mvie/searchUserMovCdList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[전송사업자코드](/kobis/business/mast/send/findSenderCodeList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[영화상영관코드](/kobis/business/mast/thea/findTheaterCodeList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+
+\t\t\t \t\t\t
+
+\t\t\t \t\t
+\t\t\t \t
+\t\t\t \t\t
+\t\t\t \t\t\t[
+\t\t\t \t\t\t\t박스오피스
+\t\t\t \t\t\t](javascript:;)
+\t\t\t \t\t\t
+\t\t\t \t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t\t\t \t\t\t\t\t\t
+\t\t\t\t                                박스오피스
+\t\t\t\t                                일별
+\t\t\t\t                            
+
+\t\t\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t[박스오피스](/kobis/business/stat/boxs/findDailyBoxOfficeList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[일별](/kobis/business/stat/boxs/findDailyBoxOfficeList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[주간/주말](/kobis/business/stat/boxs/findWeeklyBoxOfficeList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[월별](/kobis/business/stat/boxs/findMonthlyBoxOfficeList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[연도별](/kobis/business/stat/boxs/findYearlyBoxOfficeList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[역대](/kobis/business/stat/boxs/findFormerBoxOfficeList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[기간별](/kobis/business/stat/boxs/findPeriodBoxOfficeList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[해외 박스오피스](/kobis/business/stat/boxs/findWeekendForeignBoxOfficeList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[주말](/kobis/business/stat/boxs/findWeekendForeignBoxOfficeList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[예매율](/kobis/business/stat/boxs/findRealTicketList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[실시간](/kobis/business/stat/boxs/findRealTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[좌석점유율](/kobis/business/stat/boxs/findDailySeatTicketList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[일별](/kobis/business/stat/boxs/findDailySeatTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[주간/주말](/kobis/business/stat/boxs/findWeeklySeatTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[기간별](/kobis/business/stat/boxs/findPeriodSeatTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[상영점유율](/kobis/business/stat/boxs/findDailyShowTicketList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[일별](/kobis/business/stat/boxs/findDailyShowTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[주간/주말](/kobis/business/stat/boxs/findWeeklyShowTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[기간별](/kobis/business/stat/boxs/findPeriodShowTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[스크린점유율](/kobis/business/stat/boxs/findDailyScreenTicketList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[일별](/kobis/business/stat/boxs/findDailyScreenTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[주간/주말](/kobis/business/stat/boxs/findWeeklyScreenTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[기간별](/kobis/business/stat/boxs/findPeriodScreenTicketList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[공정신호등](/kobis/business/stat/unfair/findDailyShowFrequency.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[공정신호등(상영회차별 점유상황)](/kobis/business/stat/unfair/findDailyShowFrequency.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[체인영화관별 상영현황](/kobis/business/stat/boxs/findDailyMultichainList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[멀티체인별 상영현황](/kobis/business/stat/boxs/findDailyMultichainList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+
+\t\t\t \t\t\t
+
+\t\t\t \t\t
+\t\t\t \t
+\t\t\t \t\t
+\t\t\t \t\t\t[
+\t\t\t \t\t\t\t테마통계
+\t\t\t \t\t\t](javascript:;)
+\t\t\t \t\t\t
+\t\t\t \t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t\t\t \t\t\t\t\t\t
+\t\t\t\t                              총 관객수 및 매출액
+\t\t\t\t                              연도별
+\t\t\t\t                            
+
+\t\t\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t[총 관객수 및 매출액](/kobis/business/stat/them/findYearlyTotalList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[연도별](/kobis/business/stat/them/findYearlyTotalList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[월별](/kobis/business/stat/them/findMonthlyTotalList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[요일별](/kobis/business/stat/them/findWeeklyTotalList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[일별](/kobis/business/stat/them/findDailyTotalList.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[국적별 점유율](/kobis/business/stat/them/findNationalityShareList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[지역별 점유율](/kobis/business/stat/them/findAreaShareList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[상영타입별 점유율](/kobis/business/stat/them/findShowTypeShareList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[등급별 점유율](/kobis/business/stat/them/findRatingShareList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+
+\t\t\t \t\t\t
+
+\t\t\t \t\t
+\t\t\t \t
+\t\t\t \t\t
+\t\t\t \t\t\t[
+\t\t\t \t\t\t\t공식통계
+\t\t\t \t\t\t](javascript:;)
+\t\t\t \t\t\t
+\t\t\t \t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t\t\t \t\t\t\t\t\t
+\t\t\t\t                              개봉일람
+\t\t\t\t                              연도별
+\t\t\t\t                            
+
+\t\t\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t[개봉일람](/kobis/business/stat/offc/searchOfficHitTotList.do?searchMode=year)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[연도별](/kobis/business/stat/offc/searchOfficHitTotList.do?searchMode=year)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[월별](/kobis/business/stat/offc/searchOfficHitTotList.do?searchMode=month)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[연도별 박스오피스](/kobis/business/stat/offc/findYearlyBoxOfficeList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[역대 박스오피스](/kobis/business/stat/offc/findFormerBoxOfficeList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+
+\t\t\t \t\t\t
+
+\t\t\t \t\t
+\t\t\t \t
+\t\t\t \t\t
+\t\t\t \t\t\t[
+\t\t\t \t\t\t\t온라인상영관 박스오피스
+\t\t\t \t\t\t](javascript:;)
+\t\t\t \t\t\t
+\t\t\t \t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t\t\t \t\t\t\t\t\t
+\t\t\t\t                              온라인상영관통합전산망 소개
+\t\t\t\t                              
+\t\t\t\t                            
+
+\t\t\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[온라인상영관통합전산망 소개](/kobis/business/stat/online/onlineintro.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+
+\t\t\t \t\t\t
+
+\t\t\t \t\t
+\t\t\t \t
+\t\t\t \t\t
+\t\t\t \t\t\t[
+\t\t\t \t\t\t\t고객센터
+\t\t\t \t\t\t](javascript:;)
+\t\t\t \t\t\t
+\t\t\t \t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t\t\t \t\t\t\t\t\t
+\t\t\t\t                              공지사항
+\t\t\t\t                              
+\t\t\t\t                            
+
+\t\t\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[공지사항](/kobis/business/comm/ntfy/findCustomerNotifyList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[KOBIS소개](/kobis/business/comm/comm/openKobisIntro.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[KOBIS소개](/kobis/business/comm/comm/openKobisIntro.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[영화상영관연동안내](/kobis/business/comm/comm/openCinemAconnect.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[회원가입안내](/kobis/business/comm/comm/openMemBerJoin.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[FIMS 코드 신청안내](/kobis/business/comm/comm/fimsCodeSuggest.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[영화인 작품참여내역서 이용안내](/kobis/business/comm/comm/actorInfo.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[비상설 상영장 가입안내](/kobis/business/comm/comm/openOffTheater.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[영비법](/kobis/business/comm/comm/openStatute.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[개인정보처리방침](/kobis/business/comm/comm/openPrivacyAgreement.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[SITE MAP](/kobis/business/comm/comm/openSiteMap.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[오시는 길](/kobis/business/comm/comm/openLocation.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[정보수정요청](/kobis/business/comm/bord/listMyTip.do?bizLogicType=3)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t* \t\t\t \t\t\t\t\t\t\t\t\t\t\t\t\t[정보수정요청 등록](/kobis/business/comm/bord/insertTip.do)
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t\t
+
+\t\t\t \t\t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[로그인](/kobis/business/comm/user/openLogin.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[회원가입](/kobis/business/comm/user/openRegiUser.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[FAQ](/kobis/business/comm/comm/openFaq.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t[설문조사](/kobis/business/sati/findSatiReqList.do)\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t\t\t
+\t\t\t \t\t\t\t\t
+\t\t\t \t\t\t\t
+
+\t\t\t \t\t\t
+
+\t\t\t \t\t
+\t\t\t \t
+\t\t\t
+\t\t
+
+            * 
+
+            * 박스오피스
+
+            * 개봉 예정작
+
+            * 주요지표
+
+            * Chart
+
+            * 독립·예술영화
+
+            * 공지사항
+
+            *
+
+## 해외 박스오피스[](/kobis/business/stat/boxs/findWeekendForeignBoxOfficeList.do)
+
+                                \t|  | 영화명 |  | 매출액 | 증감율 |
+|---|---|---|---|---|
+| 1 | Superman |  | $ 58,450,094 | keep |
+| 2 | Jurassic World Rebirth |  | $ 23,701,750 | keep |
+| 3 | I Know What You Did Last Summer |  | $ 12,755,359 | new |
+| 4 | Smurfs |  | $ 11,075,090 | new |
+| 5 | F1 The Movie |  | $ 9,877,061 | DOWN2 |
+| 6 | How to Train Your Dragon |  | $ 5,401,655 | DOWN2 |
+| 7 | Eddington |  | $ 4,263,421 | new |
+| 8 | Elio |  | $ 2,122,462 | DOWN3 |
+| 9 | Lilo &amp; Stitch |  | $ 1,596,473 | DOWN2 |
+| 10 | 28 Years Later |  | $ 1,325,024 | DOWN4 |
+
+미국2025년 07월 18일(금) ~ 2025년 07월 20일(일) 기준
+
+                                \t|  | 영화명 |  | 매출액 | 증감율 |
+|---|---|---|---|---|
+| 1 | Superman |  | £ 4,877,459 | keep |
+| 2 | Jurassic World Rebirth |  | £ 3,295,874 | keep |
+| 3 | F1 The Movie |  | £ 1,260,688 | keep |
+| 4 | Smurfs |  | £ 1,212,110 | new |
+| 5 | I Know What You Did Last Summer |  | £ 941,968 | new |
+| 6 | How to Train Your Dragon |  | £ 675,899 | DOWN2 |
+| 7 | 28 Years Later |  | £ 438,639 | DOWN2 |
+| 8 | Elio |  | £ 307,130 | DOWN2 |
+| 9 | Lilo &amp; Stitch |  | £ 196,246 | DOWN2 |
+| 10 | Saiyaara |  | £ 194,071 | new |
+
+영국2025년 07월 18일(금) ~ 2025년 07월 20일(일) 기준
+
+                                    [![RENTRAK](/kobis/web/comm/images/main/btn_rentrak.png)
+](javascript:;)
+                                    
+                                        전 세계의 TV, 영화산업의 전문인들과 광고인들은 RENTRAK("렌트랙")이 제공하는 안정적이고 강력한 매체 소비 측정 서비스를 의존하여 박스오피스 멀티스크린, TV, 홈비디오 등의 여러 플랫폼에 걸쳐 정확한 타겟 광고를 구현하고 그들의 비즈니스 목표를 달성하고 있습니다.
+
+## 일별 박스오피스
+                                    [](/kobis/business/stat/boxs/findDailyBoxOfficeList.do)
+
+                                \t|  | 영화명 | 매출액 | 관객수 | 누적 매출액 | 누적 관객수 | 증감율 |
 |---|---|---|---|---|---|---|
-| 목환자 | Normal | 6 | 1 | 120 | 클래식 하우스 | 25-07-20 12:39 |
-| FriedKuto | Normal | 1 | 1.2 | 24 | 클래식 하우스 | 25-07-20 12:10 |
-| IAMBACK_SG | Normal | 3 | 2.4 | 144 | 클래식 하우스 | 25-07-20 11:46 |
-| IAMBACK_SG | Hell | 2 | 0 | 0 | 공원 | 25-07-20 11:38 |
-| 매콤한 사탕 | Normal | 38 | 1 | 760 | 클래식 하우스 | 25-07-20 10:21 |
-| 6328665004415654 | Normal | 23 | 0 | 0 | 클래식 하우스 | 25-07-20 08:37 |
-| VJPUGS | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-20 06:38 |
-| VJPUGS | Normal | 1 | 1 | 20 | 지하 연구소 | 25-07-20 06:37 |
-| 7294863671899776 | Normal | 6 | 1.2 | 144 | 클래식 하우스 | 25-07-20 06:31 |
-| am3rima | Hell | 1 | 1.5 | 30 | 공원 | 25-07-20 04:45 |
-| 9056880339346420 | Normal | 2 | 1 | 40 | 클래식 하우스 | 25-07-20 04:24 |
-| Rollo | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-20 02:34 |
-| ddiop120 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-20 02:05 |
-| ComeTrabas | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-20 01:09 |
-| Caclol | Normal | 6 | 1 | 120 | 클래식 하우스 | 25-07-20 01:01 |
-| FriedKuto | Hell | 2 | 6 | 240 | 공원 | 25-07-20 00:51 |
-| Caclol | Hard | 1 | 1 | 20 | 중앙 연회장 | 25-07-20 00:44 |
-| mentong | Normal | 1 | 1.5 | 30 | 클래식 하우스 | 25-07-19 23:46 |
-| 매콤한 사탕 | Normal | 37 | 1 | 740 | 클래식 하우스 | 25-07-19 20:54 |
-| 구개음화 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-19 19:53 |
-| xoghks0821 | Normal | 3 | 0 | 0 | 클래식 하우스 | 25-07-19 19:52 |
-| xoghks0821 | Normal | 3 | 0 | 0 | 클래식 하우스 | 25-07-19 19:50 |
-| 전역좀 | Normal | 26 | 1 | 520 | 클래식 하우스 | 25-07-19 19:33 |
-| 타락파워전사 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-19 18:50 |
-| 전역좀 | Normal | 4 | 2.25 | 180 | 클래식 하우스 | 25-07-19 18:12 |
-| 6535407161338115 | Hell | 30 | 1 | 600 | 공원 | 25-07-19 17:41 |
-| SiAsen | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-19 17:37 |
-| SiAsen | Normal | 2 | 0 | 0 | 클래식 하우스 | 25-07-19 17:37 |
-| SiAsen | Normal | 2 | 0 | 0 | 클래식 하우스 | 25-07-19 17:36 |
-| 6535407161338115 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-19 15:33 |
-| 6906004689100367 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-19 15:11 |
-| ㅗㅕㄹㅇ혁ㅃ | Normal | 1 | 0 | 0 | 지하 연구소 | 25-07-19 15:05 |
-| ㅗㅕㄹㅇ혁ㅃ | Normal | 8 | 0 | 0 | 클래식 하우스 | 25-07-19 15:05 |
-| ㅗㅕㄹㅇ혁ㅃ | Normal | 1 | 2.3 | 46 | 클래식 하우스 | 25-07-19 15:04 |
-| 9311612837208784 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-19 15:03 |
-| ㅗㅕㄹㅇ혁ㅃ | Normal | 2 | 0 | 0 | 클래식 하우스 | 25-07-19 15:03 |
-| ㅗㅕㄹㅇ혁ㅃ | Normal | 1 | 1.2 | 24 | 클래식 하우스 | 25-07-19 15:02 |
-| 9027792668994948 | Normal | 1 | 2.4 | 48 | 클래식 하우스 | 25-07-19 14:44 |
-| 9591113376653845 | Hell | 63 | 3.7 | 4662 | 공원 | 25-07-19 14:41 |
-| JMZ | Normal | 12 | 0 | 0 | 클래식 하우스 | 25-07-19 13:32 |
-| 2860707342936500 | Normal | 7 | 1 | 140 | 클래식 하우스 | 25-07-19 13:29 |
-| 2860707342936500 | Normal | 2 | 1 | 40 | 클래식 하우스 | 25-07-19 12:52 |
-| CrisV23 | Normal | 1000000 | 0 | 0 | 지하 연구소 | 25-07-19 12:26 |
-| CrisV23 | Normal | 1 | 1.1 | 22 | 클래식 하우스 | 25-07-19 11:57 |
-| CrisV23 | Normal | 5 | 1 | 100 | 클래식 하우스 | 25-07-19 11:56 |
-| CrisV23 | Normal | 5 | 1 | 100 | 클래식 하우스 | 25-07-19 11:56 |
-| 만두만두 | Normal | 31 | 1 | 620 | 클래식 하우스 | 25-07-19 11:19 |
-| 9591113376653845 | Hell | 61 | 3.7 | 4514 | 공원 | 25-07-19 10:49 |
-| eskuw12 | Normal | 1 | 0 | 0 | 지하 연구소 | 25-07-19 09:02 |
-| eskuw12 | Normal | 100 | 0 | 0 | 클래식 하우스 | 25-07-19 09:01 |
-| eskuw12 | Hard | 2 | 5.45 | 218 | 병원 | 25-07-19 09:00 |
-| eskuw12 | Normal | 18 | 1 | 360 | 클래식 하우스 | 25-07-19 08:46 |
-| 8959638380075506 | Normal | 5 | 1 | 100 | 클래식 하우스 | 25-07-19 07:01 |
-| 8959638380075506 | Normal | 4 | 1 | 80 | 클래식 하우스 | 25-07-19 06:56 |
-| am3rima | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-19 03:32 |
-| 4342929453766359 | Normal | 5 | 5 | 500 | 클래식 하우스 | 25-07-19 02:20 |
-| 4331459178852506 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-19 02:09 |
-| 1864649446230383 | Hard | 1 | 1 | 20 | 병원 | 25-07-19 01:52 |
-| 1864649446230383 | Normal | 1 | 1 | 20 | 지하 연구소 | 25-07-19 01:51 |
-| eskuw12 | Normal | 17 | 1 | 340 | 클래식 하우스 | 25-07-19 01:29 |
-| 3344633125407674 | Normal | 1 | 1.05 | 21 | 클래식 하우스 | 25-07-19 00:23 |
-| am3rima | Normal | 11 | 1 | 220 | 클래식 하우스 | 25-07-19 00:12 |
-| 한솔2 | Normal | 53 | 1 | 1060 | 클래식 하우스 | 25-07-18 23:39 |
-| 9591113376653845 | Hell | 55 | 3.7 | 4070 | 공원 | 25-07-18 23:28 |
-| 3619831878094163 | Normal | 14 | 1 | 280 | 클래식 하우스 | 25-07-18 22:15 |
-| 1065932091797639 | Normal | 17 | 1 | 340 | 클래식 하우스 | 25-07-18 22:13 |
-| Lingling | Hard | 103 | 0 | 0 | 병원 | 25-07-18 21:44 |
-| 1065932091797639 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-18 21:24 |
-| 1065932091797639 | Normal | 13 | 1 | 260 | 클래식 하우스 | 25-07-18 21:23 |
-| 1065932091797639 | Normal | 12 | 1 | 240 | 클래식 하우스 | 25-07-18 21:20 |
-| debuff | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-18 21:20 |
-| Lingling | Normal | 2 | 0 | 0 | 클래식 하우스 | 25-07-18 21:19 |
-| k3win | Normal | 5 | 5.65 | 565 | 클래식 하우스 | 25-07-18 20:50 |
-| 1065932091797639 | Normal | 11 | 1 | 220 | 클래식 하우스 | 25-07-18 20:41 |
-| k3win | Normal | 6 | 1 | 120 | 클래식 하우스 | 25-07-18 20:37 |
-| k3win | Normal | 3 | 1 | 60 | 클래식 하우스 | 25-07-18 20:26 |
-| PE15MA | Normal | 1 | 6 | 120 | 클래식 하우스 | 25-07-18 20:22 |
-| k3win | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-18 20:19 |
-| 4342929453766359 | Normal | 4 | 5.75 | 460 | 클래식 하우스 | 25-07-18 19:52 |
-| 4342929453766359 | Normal | 3 | 5.75 | 345 | 클래식 하우스 | 25-07-18 19:49 |
-| 4342929453766359 | Normal | 1 | 5.75 | 115 | 클래식 하우스 | 25-07-18 19:40 |
-| 4342929453766359 | Normal | 2 | 6 | 240 | 클래식 하우스 | 25-07-18 19:39 |
-| 4342929453766359 | Normal | 1 | 6 | 120 | 클래식 하우스 | 25-07-18 19:36 |
-| 4342929453766359 | Normal | 1 | 6 | 120 | 클래식 하우스 | 25-07-18 18:22 |
-| gyul0112 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-18 17:47 |
-| concak0L | Normal | 48 | 1 | 960 | 클래식 하우스 | 25-07-18 17:37 |
-| k2마니아 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-18 17:15 |
-| 4342929453766359 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-18 17:03 |
-| eskuw12 | Normal | 15 | 1 | 300 | 클래식 하우스 | 25-07-18 16:01 |
-| 매콤한 사탕 | Normal | 36 | 1 | 720 | 클래식 하우스 | 25-07-18 15:50 |
-| 매콤한 사탕 | Hard | 1 | 1 | 20 | 병원 | 25-07-18 15:49 |
-| 매콤한 사탕 | Normal | 36 | 1 | 720 | 클래식 하우스 | 25-07-18 15:44 |
-| 바른닉네임38686 | Normal | 35 | 0 | 0 | 클래식 하우스 | 25-07-18 15:42 |
-| eskuw12 | Normal | 10 | 1 | 200 | 클래식 하우스 | 25-07-18 15:36 |
-| eskuw12 | Normal | 9 | 1 | 180 | 클래식 하우스 | 25-07-18 15:32 |
-| 4774016015031080 | Normal | 7 | 1 | 140 | 클래식 하우스 | 25-07-18 15:25 |
-| 4774016015031080 | Normal | 1 | 0 | 0 | 지하 연구소 | 25-07-18 15:14 |
-| Thomas1031 | Normal | 3 | 1 | 60 | 클래식 하우스 | 25-07-18 14:30 |
-| Thomas1031 | Normal | 8 | 1 | 160 | 클래식 하우스 | 25-07-18 14:23 |
-| 매콤한 사탕 | Normal | 22 | 1 | 440 | 클래식 하우스 | 25-07-18 13:32 |
-| eskuw12 | Normal | 7 | 1 | 140 | 클래식 하우스 | 25-07-18 11:53 |
-| eskuw12 | Normal | 4 | 1 | 80 | 클래식 하우스 | 25-07-18 10:17 |
-| Mr. O | Normal | 2 | 1 | 40 | 클래식 하우스 | 25-07-18 10:15 |
-| mathias | Hard | 1 | 0 | 0 | 병원 | 25-07-18 10:11 |
-| mathias | Normal | 3 | 0 | 0 | 클래식 하우스 | 25-07-18 10:03 |
-| mathias | Normal | 16 | 5.5 | 1760 | 클래식 하우스 | 25-07-18 09:50 |
-| mathias | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-18 09:25 |
-| spamshot10 | Normal | 8 | 0 | 0 | 클래식 하우스 | 25-07-18 08:30 |
-| eskuw12 | Hell | 2 | 6 | 240 | 공원 | 25-07-18 08:23 |
-| spamshot10 | Normal | 4 | 1 | 80 | 클래식 하우스 | 25-07-18 08:22 |
-| eskuw12 | Normal | 3 | 1 | 60 | 클래식 하우스 | 25-07-18 08:18 |
-| eskuw12 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-18 08:12 |
-| mathias | Normal | 9 | 5.25 | 945 | 클래식 하우스 | 25-07-18 07:43 |
-| mathias | Normal | 5 | 5.25 | 525 | 클래식 하우스 | 25-07-18 05:33 |
-| achko | Normal | 7 | 1 | 140 | 클래식 하우스 | 25-07-18 04:47 |
-| sammm17 | Normal | 2 | 1 | 40 | 지하 연구소 | 25-07-18 04:13 |
-| 4774016015031080 | Normal | 2 | 6 | 240 | 클래식 하우스 | 25-07-18 03:48 |
-| 매콤한 사탕 | Normal | 17 | 1 | 340 | 클래식 하우스 | 25-07-18 03:28 |
-| 매콤한 사탕 | Normal | 13 | 1 | 260 | 클래식 하우스 | 25-07-18 03:12 |
-| 매콤한 사탕 | Normal | 3 | 1 | 60 | 클래식 하우스 | 25-07-18 02:39 |
-| 매콤한 사탕 | Normal | 2 | 1 | 40 | 클래식 하우스 | 25-07-18 02:37 |
-| 8646689837843648 | Normal | 8 | 2.25 | 360 | 클래식 하우스 | 25-07-18 02:01 |
-| 8646689837843648 | Normal | 8 | 2.25 | 360 | 클래식 하우스 | 25-07-18 01:57 |
-| 8646689837843648 | Normal | 3 | 1 | 60 | 클래식 하우스 | 25-07-18 01:29 |
-| 8646689837843648 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-18 01:16 |
-| 2020 | Normal | 3 | 0 | 0 | 지하 연구소 | 25-07-18 00:45 |
-| 2020 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-18 00:34 |
-| 9591113376653845 | Hell | 48 | 3.7 | 3552 | 공원 | 25-07-17 21:07 |
-| cyro | Normal | 8 | 0 | 0 | 클래식 하우스 | 25-07-17 19:59 |
-| 존박 | Normal | 1 | 1.2 | 24 | 클래식 하우스 | 25-07-17 19:27 |
-| 존박 | Normal | 1 | 1.2 | 24 | 클래식 하우스 | 25-07-17 19:27 |
-| 6825223817073717 | Normal | 17 | 1 | 340 | 클래식 하우스 | 25-07-17 18:50 |
-| 6825223817073717 | Normal | 3 | 1 | 60 | 클래식 하우스 | 25-07-17 18:04 |
-| 6825223817073717 | Normal | 2 | 1 | 40 | 클래식 하우스 | 25-07-17 17:58 |
-| concak0L | Normal | 1 | 1 | 20 | 지하 연구소 | 25-07-17 17:43 |
-| concak0L | Hell | 1 | 1 | 20 | 공원 | 25-07-17 17:42 |
-| 9591113376653845 | Hell | 33 | 3.7 | 2442 | 공원 | 25-07-17 16:21 |
-| concak0L | Normal | 11 | 1 | 220 | 클래식 하우스 | 25-07-17 16:11 |
-| concak0L | Normal | 11 | 1 | 220 | 클래식 하우스 | 25-07-17 16:07 |
-| concak0L | Normal | 11 | 1 | 220 | 클래식 하우스 | 25-07-17 16:06 |
-| concak0L | Normal | 10 | 1 | 200 | 클래식 하우스 | 25-07-17 16:06 |
-| concak0L | Normal | 3 | 6 | 360 | 클래식 하우스 | 25-07-17 15:57 |
-| concak0L | Normal | 12 | 1 | 240 | 클래식 하우스 | 25-07-17 15:57 |
-| concak0L | Normal | 3 | 6 | 360 | 클래식 하우스 | 25-07-17 15:49 |
-| concak0L | Normal | 3 | 6 | 360 | 클래식 하우스 | 25-07-17 15:48 |
-| concak0L | Normal | 1 | 6 | 120 | 클래식 하우스 | 25-07-17 15:43 |
-| concak0L | Normal | 11 | 6 | 1320 | 클래식 하우스 | 25-07-17 15:39 |
-| concak0L | Normal | 10 | 6 | 1200 | 클래식 하우스 | 25-07-17 15:38 |
-| concak0L | Normal | 10 | 6 | 1200 | 클래식 하우스 | 25-07-17 15:37 |
-| concak0L | Normal | 9 | 6 | 1080 | 클래식 하우스 | 25-07-17 15:34 |
-| concak0L | Normal | 9 | 6 | 1080 | 클래식 하우스 | 25-07-17 15:33 |
-| concak0L | Normal | 8 | 6 | 960 | 클래식 하우스 | 25-07-17 15:29 |
-| concak0L | Normal | 3 | 6 | 360 | 클래식 하우스 | 25-07-17 15:14 |
-| concak0L | Normal | 3 | 6 | 360 | 클래식 하우스 | 25-07-17 15:14 |
-| 9591113376653845 | Hell | 32 | 3.7 | 2368 | 공원 | 25-07-17 15:10 |
-| concak0L | Normal | 2 | 6 | 240 | 클래식 하우스 | 25-07-17 15:07 |
-| 9591113376653845 | Hell | 32 | 3.7 | 2368 | 공원 | 25-07-17 14:31 |
-| 이현수 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-17 14:15 |
-| 9591113376653845 | Hell | 31 | 3.7 | 2294 | 공원 | 25-07-17 14:07 |
-| 9591113376653845 | Hell | 29 | 3.7 | 2146 | 공원 | 25-07-17 13:43 |
-| 9591113376653845 | Hell | 29 | 3.7 | 2146 | 공원 | 25-07-17 13:42 |
-| 9591113376653845 | Hell | 29 | 3.7 | 2146 | 공원 | 25-07-17 12:04 |
-| 8479056571320523 | Normal | 5 | 1 | 100 | 클래식 하우스 | 25-07-17 09:15 |
-| 8479056571320523 | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-17 09:11 |
-| 8479056571320523 | Hard | 2 | 1 | 40 | 병원 | 25-07-17 09:10 |
-| 8479056571320523 | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-17 09:08 |
-| 8479056571320523 | Normal | 4 | 1 | 80 | 클래식 하우스 | 25-07-17 09:04 |
-| 8479056571320523 | Normal | 2 | 1 | 40 | 클래식 하우스 | 25-07-17 08:55 |
-| 8479056571320523 | Normal | 2 | 1 | 40 | 클래식 하우스 | 25-07-17 08:49 |
-| 8479056571320523 | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-17 08:44 |
-| 8479056571320523 | Normal | 2 | 1.45 | 58 | 클래식 하우스 | 25-07-17 08:42 |
-| 8479056571320523 | Normal | 1 | 1.45 | 29 | 클래식 하우스 | 25-07-17 08:39 |
-| 8479056571320523 | Normal | 1 | 1.45 | 29 | 클래식 하우스 | 25-07-17 08:36 |
-| mathias | Normal | 10 | 0 | 0 | 클래식 하우스 | 25-07-17 07:43 |
-| mathias | Normal | 5 | 0 | 0 | 클래식 하우스 | 25-07-17 05:00 |
-| mathias | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-17 04:36 |
-| 9591113376653845 | Hell | 28 | 3.7 | 2072 | 공원 | 25-07-17 02:24 |
-| 9591113376653845 | Hell | 22 | 3.7 | 1628 | 공원 | 25-07-17 02:05 |
-| 9591113376653845 | Hell | 20 | 3.7 | 1480 | 공원 | 25-07-17 01:59 |
-| 9591113376653845 | Hell | 1 | 3.7 | 74 | 공원 | 25-07-17 00:54 |
-| 9591113376653845 | Hell | 10 | 3.45 | 690 | 공원 | 25-07-17 00:51 |
-| 9591113376653845 | Hell | 10 | 3.45 | 690 | 공원 | 25-07-17 00:50 |
-| 99999з | Hard | 2 | 0 | 0 | 병원 | 25-07-17 00:01 |
-| Sadness | Normal | 44 | 1 | 880 | 클래식 하우스 | 25-07-16 22:25 |
-| hihowareu | Normal | 1 | 1 | 20 | 클래식 하우스 | 25-07-16 21:51 |
-| 99999з | Hard | 60 | 0 | 0 | 중앙 연회장 | 25-07-16 21:49 |
-| 3732137437045460 | Normal | 2 | 4.35 | 174 | 클래식 하우스 | 25-07-16 21:41 |
-| jakub | Normal | 3 | 0 | 0 | 클래식 하우스 | 25-07-16 21:29 |
-| 바른닉네임14487 | Normal | 2 | 0 | 0 | 클래식 하우스 | 25-07-16 21:10 |
-| 4139542112746135 | Normal | 1 | 1.85 | 37 | 클래식 하우스 | 25-07-16 20:59 |
-| 치타 | Normal | 30 | 1 | 600 | 클래식 하우스 | 25-07-16 20:58 |
-| Sadness | Normal | 31 | 1 | 620 | 클래식 하우스 | 25-07-16 19:47 |
-| 99999з | Hell | 126 | 0 | 0 | 공원 | 25-07-16 19:40 |
-| 99999з | Hell | 126 | 0 | 0 | 공원 | 25-07-16 19:40 |
-| 99999з | Hell | 2 | 0 | 0 | 공원 | 25-07-16 19:30 |
-| 99999з | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-16 19:24 |
-| 99999з | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-16 19:23 |
-| 99999з | Normal | 1 | 0 | 0 | 클래식 하우스 | 25-07-16 19:22 |
-| 99999з | Normal | 2 | 0 | 0 | 클래식 하우스 | 25-07-16 19:22 |
-| 99999з | Normal | 1 | 5.8 | 116 | 클래식 하우스 | 25-07-16 19:22 |
+| 1 | F1 더 무비 | 579,122,340 원 | 53,579 명 | 21,354,305,810 원 | 1,978,199 명 | keep |
+| 2 | 킹 오브 킹스 | 250,318,400 원 | 27,970 명 | 4,176,141,420 원 | 444,013 명 | UP1 |
+| 3 | 명탐정 코난: 척안의 잔상 | 243,406,820 원 | 25,706 명 | 3,703,660,040 원 | 379,035 명 | DOWN1 |
+| 4 | 노이즈 | 234,852,660 원 | 24,356 명 | 14,959,217,470 원 | 1,531,729 명 | keep |
+| 5 | 쥬라기 월드: 새로운 시작 | 168,624,920 원 | 18,225 명 | 19,760,102,050 원 | 2,076,928 명 | keep |
+| 6 | 슈퍼맨 | 123,198,760 원 | 12,713 명 | 8,107,221,180 원 | 801,995 명 | keep |
+| 7 | 괴기열차 | 18,243,500 원 | 2,107 명 | 898,683,010 원 | 96,873 명 | UP1 |
+| 8 | 커미션 | 10,366,700 원 | 2,033 명 | 80,583,360 원 | 11,601 명 | UP5 |
+| 9 | 극장판 도라에몽: 진구의 그림이야기 | 16,388,600 원 | 1,902 명 | 430,710,700 원 | 51,792 명 | keep |
+| 10 | 메간 2.0 | 16,627,100 원 | 1,796 명 | 185,633,950 원 | 19,493 명 | keep |
+
+2025년 07월 22일(화) 기준
+
+### 영화 정보
+
+                                    [![](/common/mast/movie/2025/06/thumb_x289/thn_0f17cb591080467199ecda80d7113f6a.jpg)
+1](#none)
+                                    
+                                        [
+                                            F1 더 무비
+                                            F1
+                                        ](#none)
+                                        개봉일2025-06-25제작상태개봉영화구분일반영화관람등급12세이상관람가상영시간155분 5초제작국가미국감독조셉 코신스키장르드라마,액션배급사워너브러더스 코리아(주)
+
+## 독립·예술영화 박스오피스[](/kobis/business/stat/boxs/findDailyBoxOfficeList.do?sMultiMovieYn=Y)
+
+                                \t|  | 영화명 | 매출액 | 관객수 | 누적 매출액 | 누적 관객수 | 증감율 |
+|---|---|---|---|---|---|---|
+| 1 | 미세리코르디아 | 6,551,750 원 | 707 명 | 51,695,850 원 | 5,215 명 | keep |
+| 2 | 스왈로우테일 버터플라이 | 4,895,000 원 | 511 명 | 116,228,360 원 | 14,969 명 | keep |
+| 3 | 무명 無名 | 4,293,500 원 | 419 명 | 606,618,200 원 | 64,211 명 | UP6 |
+| 4 | 우리들의 교복시절 | 3,094,100 원 | 360 명 | 75,143,200 원 | 7,781 명 | UP2 |
+| 5 | 애수 | 646,000 원 | 323 명 | 43,104,000 원 | 19,463 명 | new |
+| 6 | 발코니의 여자들 | 2,765,200 원 | 320 명 | 51,060,100 원 | 5,405 명 | DOWN3 |
+| 7 | 시네마 천국 | 2,522,800 원 | 290 명 | 618,088,700 원 | 86,181 명 | DOWN3 |
+| 8 | 스탑 메이킹 센스 | 2,023,000 원 | 289 명 | 7,745,000 원 | 1,036 명 | UP4 |
+| 9 | 이사 | 2,544,100 원 | 225 명 | 22,938,800 원 | 2,385 명 | UP17 |
+| 10 | 몬스터 프렌즈 | 952,000 원 | 136 명 | 98,227,715 원 | 12,085 명 | new |
+
+2025년 07월 22일(화) 기준
+
+### 영화 정보
+
+                                    [![](/common/mast/movie/2025/07/thumb_x289/thn_acdb4dcb60a94bff8cac6a42f227ba43.jpeg)
+1](#none)
+                                    
+                                        [
+                                            미세리코르디아
+                                            Miséricorde
+                                        ](#none)
+                                        개봉일2025-07-16제작상태개봉영화구분예술영화관람등급청소년관람불가상영시간103분 52초제작국가프랑스감독알랭 기로디장르드라마배급사엠엔엠인터내셔널(주)
+
+## 실시간 예매율[](/kobis/business/stat/boxs/findRealTicketList.do)
+
+                                \t|  | 영화명 | 예매 매출액 | 예매 관객수 | 누적 매출액 | 누적 관객수 | 예매율 |
+|---|---|---|---|---|---|---|
+| 1 | 전지적 독자 시점 | 953,311,760 원 | 91,045 명 | 47,933,000 원 | 4,940 명 | 22.9% |
+| 2 | 좀비딸 | 728,983,550 원 | 75,162 명 | 14,570,000 원 | 1,477 명 | 18.9% |
+| 3 | 판타스틱 4: 새로운 출발 | 764,834,510 원 | 69,145 명 | 0 원 | 0 명 | 17.4% |
+| 4 | 킹 오브 킹스 | 339,801,190 원 | 35,806 명 | 4,176,141,420 원 | 444,013 명 | 9.0% |
+| 5 | F1 더 무비 | 263,614,300 원 | 26,232 명 | 21,354,305,810 원 | 1,978,199 명 | 6.6% |
+| 6 | 베베핀 극장판: 사라진 베베핀과 핑크퐁 대모험 | 139,253,580 원 | 15,886 명 | 72,073,500 원 | 6,363 명 | 4.0% |
+| 7 | 명탐정 코난: 척안의 잔상 | 138,413,400 원 | 14,426 명 | 3,703,660,040 원 | 379,035 명 | 3.6% |
+| 8 | 악마가 이사왔다 | 162,362,400 원 | 13,667 명 | 0 원 | 0 명 | 3.4% |
+| 9 | 배드 가이즈 2 | 75,807,000 원 | 7,626 명 | 5,220,000 원 | 580 명 | 1.9% |
+| 10 | 노이즈 | 46,002,500 원 | 4,929 명 | 14,959,217,470 원 | 1,531,729 명 | 1.2% |
+
+2025년 07월 23일(수) 기준
+
+### 영화 정보
+
+                                    [![](/common/mast/movie/2025/06/thumb_x289/thn_41929a8bbdf1412c84ab1d1b2dda7ded.jpg)
+1](#none)
+                                    
+                                        [
+                                            전지적 독자 시점
+                                            Omniscient Reader
+                                        ](#none)
+                                        개봉일2025-07-23제작상태개봉예정영화구분일반영화관람등급15세이상관람가상영시간116분 42초제작국가한국감독김병우장르판타지,액션배급사롯데컬처웍스(주)롯데엔터테인먼트
+
+## 독립·예술영화 예매율[](/kobis/business/stat/boxs/findRealTicketList.do?sMultiChk=NYY&amp;sNomal=N&amp;sMulti=Y&amp;sIndie=Y)
+
+                                \t|  | 영화명 | 예매 매출액 | 예매 관객수 | 누적 매출액 | 누적 관객수 | 예매율 |
+|---|---|---|---|---|---|---|
+| 1 | 베베핀 극장판: 사라진 베베핀과 핑크퐁 대모험 | 139,253,580 원 | 15,886 명 | 72,073,500 원 | 6,363 명 | 61.6% |
+| 2 | 이사 | 24,567,700 원 | 2,268 명 | 22,938,800 원 | 2,385 명 | 8.8% |
+| 3 | 미세리코르디아 | 15,614,800 원 | 1,435 명 | 51,695,850 원 | 5,215 명 | 5.6% |
+| 4 | 스왈로우테일 버터플라이 | 10,221,600 원 | 1,059 명 | 116,228,360 원 | 14,969 명 | 4.1% |
+| 5 | 강령: 귀신놀이 | 6,356,000 원 | 908 명 | 0 원 | 0 명 | 3.5% |
+| 6 | 발코니의 여자들 | 5,850,800 원 | 506 명 | 51,060,100 원 | 5,405 명 | 2.0% |
+| 7 | 8과 1/2 | 4,543,700 원 | 484 명 | 24,198,100 원 | 2,525 명 | 1.9% |
+| 8 | 시네마 천국 | 4,062,500 원 | 381 명 | 618,088,700 원 | 86,181 명 | 1.5% |
+| 9 | 수연의 선율 | 3,085,500 원 | 340 명 | 2,235,000 원 | 220 명 | 1.3% |
+| 10 | 바람계곡의 나우시카 | 2,588,700 원 | 244 명 | 582,389,890 원 | 60,556 명 | 0.9% |
+
+2025년 07월 23일(수) 기준
+
+### 영화 정보
+
+                                    [![](/common/mast/movie/2025/06/thumb_x289/thn_ca9ce58eccc8485c9f046c13db89e302.jpg)
+1](#none)
+                                    
+                                        [
+                                            베베핀 극장판: 사라진 베베핀과 핑크퐁 대모험
+                                            Bebefinn Sing-Along Movie: Into the Pinkfong World
+                                        ](#none)
+                                        개봉일2025-07-24제작상태개봉예정영화구분예술영화관람등급전체관람가상영시간64분 45초제작국가한국감독변희선장르애니메이션배급사(주)넥스트엔터테인먼트월드(NEW)
+
+## 좌석 점유율[](/kobis/business/stat/boxs/findDailySeatTicketList.do)
+
+                                \t|  | 영화명 | 좌석수 | 좌석점유율 | 좌석판매율 | 증감율 |
+|---|---|---|---|---|---|
+| 1 | F1 더 무비 | 365,128 석 | 17.8% | 14.7% | keep |
+| 2 | 명탐정 코난: 척안의 잔상 | 319,989 석 | 15.6% | 8.0% | keep |
+| 3 | 킹 오브 킹스 | 291,175 석 | 14.2% | 9.6% | UP1 |
+| 4 | 쥬라기 월드: 새로운 시작 | 288,417 석 | 14.0% | 6.3% | DOWN1 |
+| 5 | 노이즈 | 261,504 석 | 12.7% | 9.3% | keep |
+| 6 | 슈퍼맨 | 229,586 석 | 11.2% | 5.5% | keep |
+| 7 | 메간 2.0 | 46,776 석 | 2.3% | 3.8% | keep |
+| 8 | 극장판 도라에몽: 진구의 그림이야기 | 34,180 석 | 1.7% | 5.6% | keep |
+| 9 | 괴기열차 | 21,996 석 | 1.1% | 9.6% | UP1 |
+| 10 | 이상한 집 | 21,749 석 | 1.1% | 7.3% | DOWN1 |
+
+2025년 07월 22일(화) 기준
+
+### 영화 정보
+
+                                    [![](/common/mast/movie/2025/06/thumb_x289/thn_0f17cb591080467199ecda80d7113f6a.jpg)
+1](#none)
+                                    
+                                        [
+                                            F1 더 무비
+                                            F1
+                                        ](#none)
+                                        개봉일2025-06-25제작상태개봉영화구분일반영화관람등급12세이상관람가상영시간155분 5초제작국가미국감독조셉 코신스키장르드라마,액션배급사워너브러더스 코리아(주)
+
+## 해외 박스오피스[](/kobis/business/stat/boxs/findWeekendForeignBoxOfficeList.do)
+
+                                \t|  | 영화명 |  | 매출액 | 증감율 |
+|---|---|---|---|---|
+| 1 | Superman |  | $ 58,450,094 | keep |
+| 2 | Jurassic World Rebirth |  | $ 23,701,750 | keep |
+| 3 | I Know What You Did Last Summer |  | $ 12,755,359 | new |
+| 4 | Smurfs |  | $ 11,075,090 | new |
+| 5 | F1 The Movie |  | $ 9,877,061 | DOWN2 |
+| 6 | How to Train Your Dragon |  | $ 5,401,655 | DOWN2 |
+| 7 | Eddington |  | $ 4,263,421 | new |
+| 8 | Elio |  | $ 2,122,462 | DOWN3 |
+| 9 | Lilo &amp; Stitch |  | $ 1,596,473 | DOWN2 |
+| 10 | 28 Years Later |  | $ 1,325,024 | DOWN4 |
+
+미국2025년 07월 18일(금) ~ 2025년 07월 20일(일) 기준
+
+                                \t|  | 영화명 |  | 매출액 | 증감율 |
+|---|---|---|---|---|
+| 1 | Superman |  | £ 4,877,459 | keep |
+| 2 | Jurassic World Rebirth |  | £ 3,295,874 | keep |
+| 3 | F1 The Movie |  | £ 1,260,688 | keep |
+| 4 | Smurfs |  | £ 1,212,110 | new |
+| 5 | I Know What You Did Last Summer |  | £ 941,968 | new |
+| 6 | How to Train Your Dragon |  | £ 675,899 | DOWN2 |
+| 7 | 28 Years Later |  | £ 438,639 | DOWN2 |
+| 8 | Elio |  | £ 307,130 | DOWN2 |
+| 9 | Lilo &amp; Stitch |  | £ 196,246 | DOWN2 |
+| 10 | Saiyaara |  | £ 194,071 | new |
+
+영국2025년 07월 18일(금) ~ 2025년 07월 20일(일) 기준
+
+                                    [![RENTRAK](/kobis/web/comm/images/main/btn_rentrak.png)
+](javascript:;)
+                                    
+                                        전 세계의 TV, 영화산업의 전문인들과 광고인들은 RENTRAK("렌트랙")이 제공하는 안정적이고 강력한 매체 소비 측정 서비스를 의존하여 박스오피스 멀티스크린, TV, 홈비디오 등의 여러 플랫폼에 걸쳐 정확한 타겟 광고를 구현하고 그들의 비즈니스 목표를 달성하고 있습니다.
+
+## 일별 박스오피스
+                                    [](/kobis/business/stat/boxs/findDailyBoxOfficeList.do)
+
+                                \t|  | 영화명 | 매출액 | 관객수 | 누적 매출액 | 누적 관객수 | 증감율 |
+|---|---|---|---|---|---|---|
+| 1 | F1 더 무비 | 579,122,340 원 | 53,579 명 | 21,354,305,810 원 | 1,978,199 명 | keep |
+| 2 | 킹 오브 킹스 | 250,318,400 원 | 27,970 명 | 4,176,141,420 원 | 444,013 명 | UP1 |
+| 3 | 명탐정 코난: 척안의 잔상 | 243,406,820 원 | 25,706 명 | 3,703,660,040 원 | 379,035 명 | DOWN1 |
+| 4 | 노이즈 | 234,852,660 원 | 24,356 명 | 14,959,217,470 원 | 1,531,729 명 | keep |
+| 5 | 쥬라기 월드: 새로운 시작 | 168,624,920 원 | 18,225 명 | 19,760,102,050 원 | 2,076,928 명 | keep |
+| 6 | 슈퍼맨 | 123,198,760 원 | 12,713 명 | 8,107,221,180 원 | 801,995 명 | keep |
+| 7 | 괴기열차 | 18,243,500 원 | 2,107 명 | 898,683,010 원 | 96,873 명 | UP1 |
+| 8 | 커미션 | 10,366,700 원 | 2,033 명 | 80,583,360 원 | 11,601 명 | UP5 |
+| 9 | 극장판 도라에몽: 진구의 그림이야기 | 16,388,600 원 | 1,902 명 | 430,710,700 원 | 51,792 명 | keep |
+| 10 | 메간 2.0 | 16,627,100 원 | 1,796 명 | 185,633,950 원 | 19,493 명 | keep |
+
+2025년 07월 22일(화) 기준
+
+### 영화 정보
+
+                                    [![](/common/mast/movie/2025/06/thumb_x289/thn_0f17cb591080467199ecda80d7113f6a.jpg)
+1](#none)
+                                    
+                                        [
+                                            F1 더 무비
+                                            F1
+                                        ](#none)
+                                        개봉일2025-06-25제작상태개봉영화구분일반영화관람등급12세이상관람가상영시간155분 5초제작국가미국감독조셉 코신스키장르드라마,액션배급사워너브러더스 코리아(주)
+
+[Prev]()[Next]()
+
+                        * [박스오피스]()
+
+                        * [독립·예술영화 박스오피스]()
+
+                        * [실시간 예매율]()
+
+                        * [독립·예술영화 예매율]()
+
+                        * [좌석 점유율]()
+
+                        * [해외 박스오피스]()
+
+## 개봉 예정작[](/kobis/business/mast/mvie/findOpenScheduleList.do)
+
+                        * [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_9262446563df4652816c7ffc78163e69.jpg)
+
+                                        극장판 다이노맨: 공룡산의 비밀
+                                        
+                                            개봉일
+                                            2025.07.25
+
+                                ](#none)
+* [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_f7869e51212f4b8fb46632eb1805469a.jpg)
+
+                                        귀멸의 칼날: 도공 마을 이어진 인연편
+                                        
+                                            개봉일
+                                            2025.07.25
+
+                                ](#none)
+* [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_fbb6dce66bc3483a81245ec27c43ac11.jpg)
+
+                                        귀멸의 칼날: 도공 마을 적습편
+                                        
+                                            개봉일
+                                            2025.07.25
+
+                                ](#none)
+* [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_665916435d354e49a6714c36344949e4.jpg)
+
+                                        꼬마마법사 주니토니
+                                        
+                                            개봉일
+                                            2025.07.26
+
+                                ](#none)
+
+                            * [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_bf6adf9a86a1456ca222ae42ff0a1c3c.jpg)
+
+                                        판타스틱 4: 새로운 출발
+                                        
+                                            개봉일
+                                            2025.07.24
+
+                                ](#none)
+
+                            * [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_0d1a634ebe0e404ab884a4bc4340bccb.jpg)
+
+                                        슬리핑 독스
+                                        
+                                            개봉일
+                                            2025.07.24
+
+                                ](#none)
+
+                            * [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_8d5aa8f266b74b13913f99cbced2c04f.jpg)
+
+                                        레이턴시
+                                        
+                                            개봉일
+                                            2025.07.24
+
+                                ](#none)
+
+                            * [
+                                    ![](/common/mast/movie/2025/06/thumb_x289/thn_ca9ce58eccc8485c9f046c13db89e302.jpg)
+
+                                        베베핀 극장판: 사라진 베베핀과 핑크퐁 대모험
+                                        
+                                            개봉일
+                                            2025.07.24
+
+                                ](#none)
+
+                            * [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_9262446563df4652816c7ffc78163e69.jpg)
+
+                                        극장판 다이노맨: 공룡산의 비밀
+                                        
+                                            개봉일
+                                            2025.07.25
+
+                                ](#none)
+
+                            * [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_f7869e51212f4b8fb46632eb1805469a.jpg)
+
+                                        귀멸의 칼날: 도공 마을 이어진 인연편
+                                        
+                                            개봉일
+                                            2025.07.25
+
+                                ](#none)
+
+                            * [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_fbb6dce66bc3483a81245ec27c43ac11.jpg)
+
+                                        귀멸의 칼날: 도공 마을 적습편
+                                        
+                                            개봉일
+                                            2025.07.25
+
+                                ](#none)
+
+                            * [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_665916435d354e49a6714c36344949e4.jpg)
+
+                                        꼬마마법사 주니토니
+                                        
+                                            개봉일
+                                            2025.07.26
+
+                                ](#none)
+
+                        * [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_bf6adf9a86a1456ca222ae42ff0a1c3c.jpg)
+
+                                        판타스틱 4: 새로운 출발
+                                        
+                                            개봉일
+                                            2025.07.24
+
+                                ](#none)
+* [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_0d1a634ebe0e404ab884a4bc4340bccb.jpg)
+
+                                        슬리핑 독스
+                                        
+                                            개봉일
+                                            2025.07.24
+
+                                ](#none)
+* [
+                                    ![](/common/mast/movie/2025/07/thumb_x289/thn_8d5aa8f266b74b13913f99cbced2c04f.jpg)
+
+                                        레이턴시
+                                        
+                                            개봉일
+                                            2025.07.24
+
+                                ](#none)
+* [
+                                    ![](/common/mast/movie/2025/06/thumb_x289/thn_ca9ce58eccc8485c9f046c13db89e302.jpg)
+
+                                        베베핀 극장판: 사라진 베베핀과 핑크퐁 대모험
+                                        
+                                            개봉일
+                                            2025.07.24
+
+                                ](#none)
+
+[Prev]()[Next]()
+
+                    [* 판타스틱 4: 새로운 출발
+]()[* 슬리핑 독스
+]()[* 레이턴시
+]()[* 베베핀 극장판: 사라진 베베핀과 핑크퐁 대모험
+]()[* 극장판 다이노맨: 공룡산의 비밀
+]()[* 귀멸의 칼날: 도공 마을 이어진 인연편
+]()[* 귀멸의 칼날: 도공 마을 적습편
+]()[* 꼬마마법사 주니토니
+]()
+
+## KOBIS 주요지표
+
+### 국적별 관객 점유율[더 보기](/kobis/business/stat/them/findNationalityShareList.do)
+
+                                            한국
+                                              46.8%
+
+                                            외국
+                                              53.2%
+
+### 총 관객수[더 보기](/kobis/business/stat/them/findDailyTotalList.do)
+
+                                | 일간 기준&nbsp;(Day)07/22 | 186,757명 |
+|---|
+| 주간 기준&nbsp;(Week)07/14~07/20 | 2,235,128명 |
+| 주말 기준&nbsp;(Weekly)07/18~07/20 | 1,508,069명 |
+| 월간 기준&nbsp;(Month)07/01~07/31 | 7,538,834명 |
+| 연간 기준&nbsp;(Year)2025 | 50,036,587명 |
+
+### 주간 지역별 관객 점유율[더 보기](/kobis/business/stat/them/findAreaShareList.do)
+
+                                        수도권
+                                        58.9%
+
+                                        비수도권
+                                        41.1%
+
+                                    * **서울시**
+                                        
+                                            점유율
+                                              27.7%
+
+                                            관객 원
+                                            619,970명
+
+                                    * **인천시**
+                                        
+                                            점유율
+                                               5.1%
+
+                                            관객 원
+                                            112,993명
+
+                                    * **경기도**
+                                        
+                                            점유율
+                                              26.1%
+
+                                            관객 원
+                                            583,366명
+
+                                    * **세종시**
+                                        
+                                            점유율
+                                               0.7%
+
+                                            관객 원
+                                            14,635명
+
+                                    * **대전시**
+                                        
+                                            점유율
+                                               3.3%
+
+                                            관객 원
+                                            73,875명
+
+                                    * **충청남도**
+                                        
+                                            점유율
+                                               3.0%
+
+                                            관객 원
+                                            68,010명
+
+                                    * **전라북도**
+                                        
+                                            점유율
+                                               3.0%
+
+                                            관객 원
+                                            66,317명
+
+                                    * **광주시**
+                                        
+                                            점유율
+                                               2.6%
+
+                                            관객 원
+                                            58,598명
+
+                                    * **전라남도**
+                                        
+                                            점유율
+                                               2.2%
+
+                                            관객 원
+                                            48,119명
+
+                                    * **강원도**
+                                        
+                                               2.5%
+
+                                            관객 원
+                                            54,747명
+
+                                    * **충청북도**
+                                        
+                                               2.4%
+
+                                            관객 원
+                                            53,595명
+
+                                    * **경상북도**
+                                        
+                                               3.0%
+
+                                            관객 원
+                                            68,030명
+
+                                    * **대구시**
+                                        
+                                               4.6%
+
+                                            관객 원
+                                            102,476명
+
+                                    * **울산시**
+                                        
+                                               1.9%
+
+                                            관객 원
+                                            42,892명
+
+                                    * **부산시**
+                                        
+                                               6.3%
+
+                                            141,082명
+
+                                    * **경상남도**
+                                        
+                                               4.4%
+
+                                            관객 원
+                                            97,874명
+
+                                    * **제주도**
+                                        
+                                               1.3%
+
+                                            관객 원
+                                            28,549명
+
+                                2025년 07월 14일(월) ~ 2025년 07월 20일(일)
+
+### ![KOBIS Box](/kobis/web/comm/images/main/main_tit_kobisbox.png)
+
+                            (실시간 인기영화 분석차트)
+
+                                    * 영화명
+
+                                    * 국가
+
+                                    * 예매율
+
+                                1. \t\t[\t\t\t1\t\t\t전지적 독자 시점\t\t\t한국\t\t\t22.9%\t\t](javascript:;)
+2. \t\t[\t\t\t2\t\t\t좀비딸\t\t\t한국\t\t\t18.9%\t\t](javascript:;)
+3. \t\t[\t\t\t3\t\t\t판타스틱 4: 새로운 출발\t\t\t미국\t\t\t17.4%\t\t](javascript:;)
+4. \t\t[\t\t\t4\t\t\t킹 오브 킹스\t\t\t한국\t\t\t9.0%\t\t](javascript:;)
+5. \t\t[\t\t\t5\t\t\tF1 더 무비\t\t\t미국\t\t\t6.6%\t\t](javascript:;)
+6. \t\t[\t\t\t6\t\t\t베베핀 극장판: 사라진 베베핀과 핑크퐁 대모험\t\t\t한국\t\t\t4.0%\t\t](javascript:;)
+7. \t\t[\t\t\t7\t\t\t명탐정 코난: 척안의 잔상\t\t\t일본\t\t\t3.6%\t\t](javascript:;)
+8. \t\t[\t\t\t8\t\t\t악마가 이사왔다\t\t\t한국\t\t\t3.4%\t\t](javascript:;)
+9. \t\t[\t\t\t9\t\t\t배드 가이즈 2\t\t\t미국\t\t\t1.9%\t\t](javascript:;)
+10. \t\t[\t\t\t10\t\t\t노이즈\t\t\t한국\t\t\t1.2%\t\t](javascript:;)
+
+## 독립·예술영화 재상영
+
+                                | 영화/행사명 | 제작년도 | 상영기간 | 구분 |
+|---|---|---|---|
+| 태풍 클럽 | 1985 | 상영중( 2025.07.23 ~ 2025.07.29 ) | 재상영 |
+| 패스트 라이브즈 | 2023 | 상영중( 2025.07.23 ~ 2025.07.30 ) | 재상영 |
+| 엔니오: 더 마에스트로 | 2021 | 상영중( 2025.07.23 ~ 2025.07.23 ) | 재상영 |
+| 1986 그 여름, 그리고 고등어통조림 | 2022 | 상영중( 2025.07.23 ~ 2025.07.30 ) | 재상영 |
+| 말없는 소녀 | 2021 | 상영중( 2025.07.23 ~ 2025.07.23 ) | 재상영 |
+| 애프터썬 | 2022 | 상영중( 2025.07.23 ~ 2025.07.30 ) | 재상영 |
+| 썸머 필름을 타고! | 2020 | 상영중( 2025.07.23 ~ 2025.07.27 ) | 재상영 |
+| 뿌까의 짜장면파티 | 2022 | 상영중( 2025.07.23 ~ 2025.07.23 ) | 재상영 |
+| 애프터 양 | 2021 | 상영중( 2025.07.23 ~ 2025.07.29 ) | 재상영 |
+| 반교: 디텐션 | 2019 | 상영중( 2025.07.23 ~ 2025.07.23 ) | 재상영 |
+
+[이전](javascript:;)* 1 / 2
+[다음](javascript:;)
+
+## 독립·예술영화[](/kobis/business/mast/mvie/findDiverMovList.do)
+
+                                | 상영영화관명 | 상영상태 | 지역 |
+|---|---|---|
+| 메가박스강동 | 상영중 | 서울특별시 강동구 성내동 "&gt;서울특별시 강동구 성내... |
+| KT&amp;G 상상마당 ... | 상영중 | 서울특별시 마포구 서교동"&gt;서울특별시 마포구 서교... |
+| 메가박스 상암월드컵... | 상영중 | 서울특별시 마포구 성산동"&gt;서울특별시 마포구 성산... |
+| CGV 여의도 | 상영중 | 서울특별시 영등포구 여의도동"&gt;서울특별시 영등포구 여... |
+| CGV 대학로 | 상영중 | 서울특별시 종로구 명륜2가"&gt;서울특별시 종로구 명륜... |
+| 메가박스 동대문 | 상영중 | 서울특별시 중구 을지로6가"&gt;서울특별시 중구 을지로... |
+| 영화공간주안 | 상영중 | 인천광역시 남구 주안동"&gt;인천광역시 남구 주안동 |
+| CGV 인천 | 상영중 | 인천광역시 남동구 구월동"&gt;인천광역시 남동구 구월... |
+| 메가박스 인천논현 | 상영중 | 인천광역시 남동구 논현동"&gt;인천광역시 남동구 논현... |
+| CGV 광주상무 | 상영중 | 광주광역시 서구 치평동"&gt;광주광역시 서구 치평동 |
+
+[이전](javascript:;)* 1 / 10
+[다음](javascript:;)
+
+### 영화 정보
+[![영화 포스터](/common/mast/movie/2025/06/thumb_x289/thn_d7346b0430234822bdb5a6c69b3dbdea.jpg)
+](#none)[스왈로우테일 버터플...장르 : 드라마개봉일 : 2005.06.23제작국가 : 일본감독명 : 이와이 슌지상영영화상영관 : 57개 / 72개 스크린](#none)&lt;러브레터&gt;에 이은 이와이 슌지 감독의 두 번째 장편,
+&lt;스왈로우테일 버터플라이&gt;
+
+무국적의 언어가 뒤섞이고 돈이 지배하는 가상도시, 엔타운.
+
+이름도, 국적도, 과거도 잃은 소녀 아게하는
+가수가 되길 꿈꾸는 그리코와 함께
+이 낯선 도시에서 살아갈 이유를 찾아간다.
+
+위조지폐를 손에 넣은 그들은
+자신들만의 라이브 클럽을 열고 엔타운 밴드를 결성한다.
+그리코는 무대 위에서 빛나며 온 세상의 관심을 받는다.
+
+그러나 어느 순...
+
+## 독립·예술영화 재상영
+
+                                | 영화/행사명 | 제작년도 | 상영기간 | 구분 |
+|---|---|---|---|
+| 태풍 클럽 | 1985 | 상영중( 2025.07.23 ~ 2025.07.29 ) | 재상영 |
+| 패스트 라이브즈 | 2023 | 상영중( 2025.07.23 ~ 2025.07.30 ) | 재상영 |
+| 엔니오: 더 마에스트로 | 2021 | 상영중( 2025.07.23 ~ 2025.07.23 ) | 재상영 |
+| 1986 그 여름, 그리고 고등어통조림 | 2022 | 상영중( 2025.07.23 ~ 2025.07.30 ) | 재상영 |
+| 말없는 소녀 | 2021 | 상영중( 2025.07.23 ~ 2025.07.23 ) | 재상영 |
+| 애프터썬 | 2022 | 상영중( 2025.07.23 ~ 2025.07.30 ) | 재상영 |
+| 썸머 필름을 타고! | 2020 | 상영중( 2025.07.23 ~ 2025.07.27 ) | 재상영 |
+| 뿌까의 짜장면파티 | 2022 | 상영중( 2025.07.23 ~ 2025.07.23 ) | 재상영 |
+| 애프터 양 | 2021 | 상영중( 2025.07.23 ~ 2025.07.29 ) | 재상영 |
+| 반교: 디텐션 | 2019 | 상영중( 2025.07.23 ~ 2025.07.23 ) | 재상영 |
+
+[이전](javascript:;)* 1 / 2
+[다음](javascript:;)
+
+## 독립·예술영화[](/kobis/business/mast/mvie/findDiverMovList.do)
+
+                                | 상영영화관명 | 상영상태 | 지역 |
+|---|---|---|
+| 메가박스강동 | 상영중 | 서울특별시 강동구 성내동 "&gt;서울특별시 강동구 성내... |
+| KT&amp;G 상상마당 ... | 상영중 | 서울특별시 마포구 서교동"&gt;서울특별시 마포구 서교... |
+| 메가박스 상암월드컵... | 상영중 | 서울특별시 마포구 성산동"&gt;서울특별시 마포구 성산... |
+| CGV 여의도 | 상영중 | 서울특별시 영등포구 여의도동"&gt;서울특별시 영등포구 여... |
+| CGV 대학로 | 상영중 | 서울특별시 종로구 명륜2가"&gt;서울특별시 종로구 명륜... |
+| 메가박스 동대문 | 상영중 | 서울특별시 중구 을지로6가"&gt;서울특별시 중구 을지로... |
+| 영화공간주안 | 상영중 | 인천광역시 남구 주안동"&gt;인천광역시 남구 주안동 |
+| CGV 인천 | 상영중 | 인천광역시 남동구 구월동"&gt;인천광역시 남동구 구월... |
+| 메가박스 인천논현 | 상영중 | 인천광역시 남동구 논현동"&gt;인천광역시 남동구 논현... |
+| CGV 광주상무 | 상영중 | 광주광역시 서구 치평동"&gt;광주광역시 서구 치평동 |
+
+[이전](javascript:;)* 1 / 10
+[다음](javascript:;)
+
+### 영화 정보
+[![영화 포스터](/common/mast/movie/2025/06/thumb_x289/thn_d7346b0430234822bdb5a6c69b3dbdea.jpg)
+](#none)[스왈로우테일 버터플...장르 : 드라마개봉일 : 2005.06.23제작국가 : 일본감독명 : 이와이 슌지상영영화상영관 : 57개 / 72개 스크린](#none)&lt;러브레터&gt;에 이은 이와이 슌지 감독의 두 번째 장편,
+&lt;스왈로우테일 버터플라이&gt;
+
+무국적의 언어가 뒤섞이고 돈이 지배하는 가상도시, 엔타운.
+
+이름도, 국적도, 과거도 잃은 소녀 아게하는
+가수가 되길 꿈꾸는 그리코와 함께
+이 낯선 도시에서 살아갈 이유를 찾아간다.
+
+위조지폐를 손에 넣은 그들은
+자신들만의 라이브 클럽을 열고 엔타운 밴드를 결성한다.
+그리코는 무대 위에서 빛나며 온 세상의 관심을 받는다.
+
+그러나 어느 순...
+
+[Prev]()[Next]()
+
+                        [* 독립·예술영화
+]()
+                        [* 독립·예술영화 재상영
+]()
+
+### 공지사항[더 보기](/kobis/business/comm/ntfy/findCustomerNotifyList.do)
+
+                            | CGV극장 일시 휴점(시스템 리뉴얼)에 따른 박스오피스 이용안내 | 2025.07.11 |
+|---|
+| 영비법 개정에 따른 영화상영관 입장권 부과금 징수 안내 | 2025.01.02 |
+| 2024 만족도 조사 | 2024.12.06 |
+| 네트워크 통합 개선 작업 | 2024.07.08 |
+| 롯데시네마 연계 시스템 교체 작업 | 2024.05.27 |
+| 통합전산망 전송사업자 장애 정상화 안내 | 2024.02.25 |
+
+### ![KOBIS 연동영화관](/kobis/web/comm/images/main/main_tit_theater.png)
+
+                                    전국영화관 입장권 발권정보를 실시간으로 집계처리하는 시스템으로, 신속하고 다양한 박스오피스 정보와 각종 영화산업 통계정보를 제공하여 한국영화산업 유통구조의 투명성을 제고하고 있습니다.
+
+\t
+
+\t
+    \t
+        \t
+                
+                    * [KOBIS 소개](/kobis/business/comm/comm/openKobisIntro.do)
+
+                    * [영화상영관 연동안내](/kobis/business/comm/comm/openCinemAconnect.do)
+
+                    * [개인정보처리방침](/kobis/business/comm/comm/openPrivacyAgreement.do)
+
+                    * [고객센터](/kobis/business/comm/ntfy/findCustomerNotifyList.do)
+
+                    * [정보수정요청](/kobis/business/comm/bord/listMyTip.do?bizLogicType=3)
+
+                    * [사이트맵](/kobis/business/comm/comm/openSiteMap.do)
+
+                \t
+                    \tFamily Site
+                    \tKOFIC
+                    \tOpenAPI
+
+            \t[![KOFIC 영화진흥위원회 - Korean Film Council](/kobis/web/comm/images/comm/footer_logo.png)
+](#none)
+                
+                \t(48058) 부산광역시 해운대구 수영강변대로 130(우동)
+
+                    02-6261-6573
+                    E-mail:&nbsp;kobis@kofic.or.kr
+                    이용시간: 09:00 ~ 18:00(평일)
+                    COPYRIGHT(C) KOREAN FILM COUNCIL ALL RIGHTS RESERVED.
+
+            \t

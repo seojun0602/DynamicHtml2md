@@ -142,9 +142,11 @@ function getHtml(url, callback, options = {}) {
                 var finalHtml = state.html;
                 if (finalHtml && finalHtml.startsWith('"') && finalHtml.endsWith('"')) {
                     finalHtml = finalHtml.substring(1, finalHtml.length - 1)
-                                        .replace(/\\u003C/g, '<')
-                                        .replace(/\\"/g, '"')
-                                        .replace(/\\n/g, '\n');
+                                        .replace(/\\u([\dA-F]{4})/gi, (_, code) => String.fromCharCode(parseInt(code, 16)))
+                                          .replace(/\\"/g, '"')
+                                          .replace(/\\n/g, '\n')
+                                          .replace(/\\r/g, '\r')
+                                          .replace(/\\t/g, '\t')
                 }
                 callback(null, finalHtml);
             }

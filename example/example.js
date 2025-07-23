@@ -25,4 +25,15 @@ getHtml(url, function(error, html) {
     console.log(html);
 }, options);
 
+// and you can parse to use Jsoup.parse
+
+getHtml(url, function(error, html) {
+    if (error) {
+        console.error(error.message);
+        return;
+    }
+    console.log(org.jsoup.Jsoup.parse(html)).text())
+}, options);
+
+
 */

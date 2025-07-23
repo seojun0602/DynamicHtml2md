@@ -25,7 +25,7 @@ getHtml(url, function(error, html) {
     console.log(html);
 }, options);
 
-// and you can parse to use Jsoup.parse
+// and you can use Jsoup.parse to parse
 
 getHtml(url, function(error, html) {
     if (error) {

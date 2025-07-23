@@ -244,7 +244,8 @@ KOFIC 영화관 입장권 통합전산망(2)
 
 ## 해외 박스오피스[](/kobis/business/stat/boxs/findWeekendForeignBoxOfficeList.do)
 
-                                   |  | 영화명 |  | 매출액 | 증감율 |
+                                  
+ |  | 영화명 |  | 매출액 | 증감율 |
 |---|---|---|---|---|
 | 1 | Superman |  | $ 58,450,094 | keep |
 | 2 | Jurassic World Rebirth |  | $ 23,701,750 | keep |

@@ -61,7 +61,7 @@ function getHtml(url, callback, options = {}) {
     setTimeout(() => {
         window.signalScrapingComplete();
         observer.disconnect();
-    }, `+m+`});
+    }, ${m}});
 })();`, f = `
 (function() {
     const clonedBody = document.documentElement.cloneNode(true);

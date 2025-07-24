@@ -30,7 +30,7 @@ function getHtml(url, callback, options = {}) {
         isDone: false
     };
     
-    let m = (options.maxwt ?? 10000);
+    let m = (options.maxwt ? option.maxwt : 10000);
     const o = `
 (function() {
     window.signalScrapingComplete = function() {
@@ -88,7 +88,7 @@ function getHtml(url, callback, options = {}) {
                 cookieManager.setCookie(url, c.toString());
             });
             
-            webView.getSettings().setUserAgentString(options.userAgent ?? "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36");
+            webView.getSettings().setUserAgentString(options.userAgent ? options.userAgent : "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36");
             webView.getSettings().setJavaScriptEnabled(true);
             webView.getSettings().setDomStorageEnabled(true);
 
@@ -147,7 +147,7 @@ function getHtml(url, callback, options = {}) {
         }
     });
 
-    const timeout = (options.timeout ?? 30000);
+    const timeout = (options.timeout ? options.timeout : 30000);
     let waited = 0;
     const interval = 100;
 

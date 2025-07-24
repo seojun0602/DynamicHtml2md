@@ -10,6 +10,19 @@
  * @param {function(error, html)} callback
 */
 
+/* 표준 및 레거시 API를 모두 지원하기 위해 App으로 통합.
+   - 표준: App이 존재하면 그대로 사용
+   - 레거시: Api를 참조하지만 원본은 수정하지 않음
+   -> 양쪽 다 오염되지 않음.
+*/
+
+if (typeof App == 'undefined' && typeof Api != 'undefined') {
+    App = Api;
+    if (typeof App.runOnUiThread == 'undefined' && typeof App.UIThread == 'function') {
+        App.runOnUiThread = App.UIThread;
+    }
+}
+
 function getHtml(url, callback, options = {}) {
     let state = {
         html: null,
@@ -48,7 +61,7 @@ function getHtml(url, callback, options = {}) {
     setTimeout(() => {
         window.signalScrapingComplete();
         observer.disconnect();
-    }, ${m});
+    }, `+m+`});
 })();`, f = `
 (function() {
     const clonedBody = document.documentElement.cloneNode(true);

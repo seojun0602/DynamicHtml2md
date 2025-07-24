@@ -292,7 +292,7 @@ function html2md(html) {
     if (extractedJsonData.length > 0) {
         markdown += '\n---\n\n## json data\n\n';
         extractedJsonData.forEach(function(jsonString) {
-            markdown += '```json\n' + (jsonString ?? "") + '\n```\n\n';
+            markdown += '```json\n' + (jsonString ? jsonString : "") + '\n```\n\n';
         });
     }
     

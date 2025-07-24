@@ -30,7 +30,7 @@ function getHtml(url, callback, options = {}) {
         isDone: false
     };
     
-    let m = (options.maxwt ? option.maxwt : 10000);
+    let m = (options.maxwt ? options.maxwt : 10000);
     const o = `
 (function() {
     window.signalScrapingComplete = function() {

@@ -1,5 +1,6 @@
 /*
    DynamicHtml2md. 2025.07.20
+   Version: v1.0.3
    Author: seojun0602
    functions: getHtml, html2md, dh2md
 */

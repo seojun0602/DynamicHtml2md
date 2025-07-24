@@ -84,7 +84,7 @@ function getHtml(url, callback, options = {}) {
             let cookieManager = android.webkit.CookieManager.getInstance();
             cookieManager.setAcceptCookie(true);
             cookieManager.setAcceptThirdPartyCookies(webView, true);
-            (options.cookies).forEach(function(c) {
+            (options.cookies ? options.cookies : []).forEach(function(c) {
                 cookieManager.setCookie(url, c.toString());
             });
             

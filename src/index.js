@@ -84,6 +84,10 @@ function getHtml(url, callback, options = {}) {
             let cookieManager = android.webkit.CookieManager.getInstance();
             cookieManager.setAcceptCookie(true);
             cookieManager.setAcceptThirdPartyCookies(webView, true);
+            (options.cookies).forEach(function(c) {
+                cookieManager.setCookie(url, c.toString());
+            });
+            
             webView.getSettings().setUserAgentString(options.userAgent ?? "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36");
             webView.getSettings().setJavaScriptEnabled(true);
             webView.getSettings().setDomStorageEnabled(true);
@@ -312,8 +316,58 @@ function dh2md(url, callback, options = {}) {
     }, options);
 }
 
+function Cookie(name, value) {
+    this.name = name;
+    this.value = value;
+    this.path = "/";
+    this.domain = null;
+    this.expires = null;
+    this.secure = false;
+    this.sameSite = null;
+}
+
+Cookie.prototype.setPath = function(path) {
+    this.path = path;
+    return this;
+};
+
+Cookie.prototype.setDomain = function(domain) {
+    this.domain = domain;
+    return this;
+};
+
+Cookie.prototype.setExpires = function(expires) {
+    if (expires instanceof Date) {
+        this.expires = expires.toUTCString();
+    } else {
+        this.expires = expires;
+    }
+    return this;
+};
+
+Cookie.prototype.setSecure = function(secure) {
+    this.secure = (secure !== false);
+    return this;
+};
+
+Cookie.prototype.setSameSite = function(sameSite) {
+    this.sameSite = sameSite;
+    return this;
+};
+
+Cookie.prototype.toString = function() {
+    var parts = [this.name + "=" + this.value];
+    if (this.path) parts.push("path=" + this.path);
+    if (this.domain) parts.push("domain=" + this.domain);
+    if (this.expires) parts.push("expires=" + this.expires);
+    if (this.secure) parts.push("secure");
+    if (this.sameSite) parts.push("SameSite=" + this.sameSite);
+    return parts.join("; ");
+};
+
 module.exports = {
     getHtml,
     html2md,
-    dh2md
+    dh2md,
+    Cookie
 };

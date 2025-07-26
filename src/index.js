@@ -18,7 +18,11 @@ if (typeof App == 'undefined' && typeof Api != 'undefined') {
     }
 }
 
-let console = console || { log: function(a,b){ Log.d(a, b) } }; 
+let console = console || {
+    log: function(a, b) {
+        Log.d(a, b)
+    }
+};
 
 /**
  * getHtml. 웹뷰 기반으로 동적 웹페이지의 HTML을 가져오는 함수.
@@ -234,32 +238,31 @@ function html2md(html, url) {
         return '';
     });
 
-processedHtml = processedHtml.replace(/<table((?!<table)[\s\S])*?<\/table>/gi, function(tableHtml) {
-    return tableHtml.replace(/<img[^>]*>/gi, function(imgTag) {
-        const srcMatch = imgTag.match(/src="([^"]*)"/);
-        const altMatch = imgTag.match(/alt="([^"]*)"/);
+    processedHtml = processedHtml.replace(/<table((?!<table)[\s\S])*?<\/table>/gi, function(tableHtml) {
+        return tableHtml.replace(/<img[^>]*>/gi, function(imgTag) {
+            const srcMatch = imgTag.match(/src="([^"]*)"/);
+            const altMatch = imgTag.match(/alt="([^"]*)"/);
 
-        let src = srcMatch ? srcMatch[1].trim() : '';
-        const alt = altMatch ? altMatch[1].replace(/\n/g, '') : '';
+            let src = srcMatch ? srcMatch[1].trim() : '';
+            const alt = altMatch ? altMatch[1].replace(/\n/g, '') : '';
 
-        if (!src || src.startsWith('data:image')) return '';
+            if (!src || src.startsWith('data:image')) return '';
 
-        try {
-            const f = u =>
-                /https?:\/\/[^\/]+\/?$/.test(u) ?
+            try {
+                const f = u =>
+                    /https?:\/\/[^\/]+\/?$/.test(u) ?
                     u.endsWith('/') ? u : u + '/' :
-                !u.endsWith('/') ?
+                    !u.endsWith('/') ?
                     (u.split('/').pop().includes('.') ? u.slice(0, u.lastIndexOf('/') + 1) : u + '/') :
                     u;
-            src = new java.net.URL(new java.net.URL(f(url)), src).toString();
-        } catch (e) {
-        }
+                src = new java.net.URL(new java.net.URL(f(url)), src).toString();
+            } catch (e) {}
 
-        const placeholder = `__IMG_PLACEHOLDER_${imagePlaceholders.length}__`;
-        imagePlaceholders.push(`![${alt}](${src})`);
-        return placeholder;
+            const placeholder = `__IMG_PLACEHOLDER_${imagePlaceholders.length}__`;
+            imagePlaceholders.push(`![${alt}](${src})`);
+            return placeholder;
+        });
     });
-});
 
     const cellToMarkdown = (cellHtml) => {
         let content = cellHtml.replace(/<t[dh][^>]*>([\s\S]*)<\/t[dh]>/i, '$1').trim();
@@ -374,18 +377,18 @@ processedHtml = processedHtml.replace(/<table((?!<table)[\s\S])*?<\/table>/gi, f
         tablePlaceholders.forEach((md, i) => {
             markdown = markdown.replace(new RegExp(`__TABLE_PLACEHOLDER_${i}__`, 'g'), md);
 
-imagePlaceholders.forEach((md, i) => {
-    markdown = markdown.replace(new RegExp(`__IMG_PLACEHOLDER_${i}__`, 'g'), md);
-});
+            imagePlaceholders.forEach((md, i) => {
+                markdown = markdown.replace(new RegExp(`__IMG_PLACEHOLDER_${i}__`, 'g'), md);
+            });
         });
     };
 
     markdown = markdown.replace(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => {
-    try {
-        href = new java.net.URL(new java.net.URL(url), href.trim()).toString();
-    } catch (e) {}
-    return `[${text.replace(/\n/g, '')}](${href})`;
-});
+        try {
+            href = new java.net.URL(new java.net.URL(url), href.trim()).toString();
+        } catch (e) {}
+        return `[${text.replace(/\n/g, '')}](${href})`;
+    });
     markdown = markdown.replace(/<(strong|b)>(.*?)<\/\1>/gi, '**$2**');
     markdown = markdown.replace(/<(em|i)>(.*?)<\/\1>/gi, '*$2*');
 

@@ -1,15 +1,9 @@
 /*
    DynamicHtml2md. 2025.07.20
-   Version: v1.0.4
+   Version: v1.0.5
    Author: seojun0602
    functions: getHtml, html2md, dh2md
 */
-
-/**
- * getHtml. 웹뷰 기반으로 동적 웹페이지의 HTML을 가져오는 함수.
- * @param {string} url
- * @param {function(error, html)} callback
- */
 
 /* 표준 및 레거시 API를 모두 지원하기 위해 App으로 통합.
    - 표준: App이 존재하면 그대로 사용
@@ -24,15 +18,25 @@ if (typeof App == 'undefined' && typeof Api != 'undefined') {
     }
 }
 
-function getHtml(url, callback, options = {}) {
-    let state = {
-        html: null,
-        error: null,
-        isDone: false
-    };
+let console = console || { log: function(a,b){ Log.d(a, b) } }; 
 
-    let m = (options.maxwt ? options.maxwt : 10000);
-    const o = `
+/**
+ * getHtml. 웹뷰 기반으로 동적 웹페이지의 HTML을 가져오는 함수.
+ * @param {string} url
+ * @param {function(error, html)} callback
+ */
+
+function getHtml(url, callback, options = {}) {
+    (function() {
+        var state = {
+            html: null,
+            error: null,
+            isDone: false,
+            startedAt: null
+        };
+
+        let m = (options.maxwt || 10000);
+        const o = `
 (function() {
     window.signalScrapingComplete = function() {
         document.body.setAttribute('scraping-complete', 'true');
@@ -64,7 +68,7 @@ function getHtml(url, callback, options = {}) {
         observer.disconnect();
     }, ${m});
 })();`,
-        f = `
+            f = `
 (function() {
     const clonedBody = document.documentElement.cloneNode(true);
     const allElements = clonedBody.querySelectorAll('*');
@@ -78,109 +82,113 @@ function getHtml(url, callback, options = {}) {
 })();
 `;
 
-    let uiTask = function() {
-        try {
-            // getContext must be implemented on java
-            let context = App.getContext();
-            let webView = new android.webkit.WebView(context);
-            let cookieManager = android.webkit.CookieManager.getInstance();
-            cookieManager.setAcceptCookie(true);
-            cookieManager.setAcceptThirdPartyCookies(webView, true);
-            (options.cookies ? options.cookies : []).forEach(function(c) {
-                cookieManager.setCookie(url, c.toString());
-            });
+        let uiTask = function() {
+            try {
+                // getContext must be implemented on java
+                let context = App.getContext();
+                let webView = new android.webkit.WebView(context);
+                let cookieManager = android.webkit.CookieManager.getInstance();
+                cookieManager.setAcceptCookie(true);
+                cookieManager.setAcceptThirdPartyCookies(webView, true);
+                (options.cookies ? options.cookies : []).forEach(function(c) {
+                    cookieManager.setCookie(url, c.toString());
+                });
 
-            webView.getSettings().setUserAgentString(options.userAgent ? options.userAgent : "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36");
-            webView.getSettings().setJavaScriptEnabled(true);
-            webView.getSettings().setDomStorageEnabled(true);
+                webView.getSettings().setUserAgentString(options.userAgent ? options.userAgent : "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36");
+                webView.getSettings().setJavaScriptEnabled(true);
+                webView.getSettings().setDomStorageEnabled(true);
 
-            webView.setWebViewClient(new JavaAdapter(android.webkit.WebViewClient, {
-                onPageFinished: function(view, finishedUrl) {
-                    let pollForCompletion = function() {
-                        if (state.isDone) return;
+                webView.setWebViewClient(new JavaAdapter(android.webkit.WebViewClient, {
+                    onPageFinished: function(view, finishedUrl) {
+                        let pollForCompletion = function() {
+                            state.startedAt = Date.now();
+                            if (state.isDone) return;
 
-                        view.evaluateJavascript(`(function(){ return document.body.getAttribute('scraping-complete'); })();`,
-                            new JavaAdapter(android.webkit.ValueCallback, {
-                                onReceiveValue: function(value) {
-                                    if (state.isDone) return;
+                            view.evaluateJavascript(`(function(){ return document.body.getAttribute('scraping-complete'); })();`,
+                                new JavaAdapter(android.webkit.ValueCallback, {
+                                    onReceiveValue: function(value) {
+                                        if (state.isDone) return;
 
-                                    if (value === '"true"') {
-                                        view.evaluateJavascript(f, new JavaAdapter(android.webkit.ValueCallback, {
-                                            onReceiveValue: function(finalHtml) {
-                                                state.html = finalHtml;
-                                                state.isDone = true;
-                                                view.destroy();
-                                            }
-                                        }));
-                                    } else {
-                                        new android.os.Handler(android.os.Looper.getMainLooper()).postDelayed(
-                                            new java.lang.Runnable({
-                                                run: pollForCompletion
-                                            }), 300
-                                        );
+                                        if (value === '"true"') {
+                                            view.evaluateJavascript(f, new JavaAdapter(android.webkit.ValueCallback, {
+                                                onReceiveValue: function(finalHtml) {
+                                                    state.html = finalHtml;
+                                                    state.isDone = true;
+                                                    view.destroy();
+                                                }
+                                            }));
+                                        } else {
+                                            new android.os.Handler(android.os.Looper.getMainLooper()).postDelayed(
+                                                new java.lang.Runnable({
+                                                    run: pollForCompletion
+                                                }), 300
+                                            );
+                                        }
                                     }
-                                }
-                            })
-                        );
-                    };
+                                })
+                            );
+                        };
 
-                    view.evaluateJavascript(o, null);
-                    pollForCompletion();
-                },
+                        view.evaluateJavascript(o, null);
+                        pollForCompletion();
+                    },
 
-                onReceivedError: function(view, request, error) {
-                    state.error = error.getDescription();
-                    state.isDone = true;
-                    view.destroy();
-                }
-            }));
+                    onReceivedError: function(view, request, error) {
+                        state.error = error.getDescription();
+                        state.isDone = true;
+                        view.destroy();
+                    }
+                }));
 
-            webView.loadUrl(url);
+                webView.loadUrl(url);
 
-        } catch (e) {
-            state.error = e.toString();
-            state.isDone = true;
-        }
-    };
-
-    // runOnUiThread must be implemented on java
-    App.runOnUiThread(uiTask, function(error, result) {
-        if (error) {
-            state.error = error.toString();
-            state.isDone = true;
-        }
-    });
-
-    const timeout = (options.timeout ? options.timeout : 30000);
-    let waited = 0;
-    const interval = 100;
-
-    function checkDone() {
-        if (state.isDone) {
-            if (state.error) {
-                callback(new Error(state.error), null);
-            } else {
-                var finalHtml = state.html;
-                if (finalHtml && finalHtml.startsWith('"') && finalHtml.endsWith('"')) {
-                    finalHtml = finalHtml.substring(1, finalHtml.length - 1)
-                        .replace(/\\u([\dA-F]{4})/gi, (_, code) => String.fromCharCode(parseInt(code, 16)))
-                        .replace(/\\"/g, '"')
-                        .replace(/\\n/g, '\n')
-                        .replace(/\\r/g, '\r')
-                        .replace(/\\t/g, '\t')
-                }
-                callback(null, finalHtml);
+            } catch (e) {
+                state.error = e.toString();
+                state.isDone = true;
             }
-        } else if (waited >= timeout) {
-            callback(new Error("Timeout: Failed to get HTML within " + (timeout / 1000) + " seconds."), null);
-        } else {
-            java.lang.Thread.sleep(interval);
-            waited += interval;
-            checkDone();
-        }
-    }
+        };
 
-    checkDone();
+        // runOnUiThread must be implemented on java
+        App.runOnUiThread(uiTask, function(error, result) {
+            if (error) {
+                state.error = error.toString();
+                state.isDone = true;
+            }
+        });
+
+        new java.lang.Thread(new java.lang.Runnable({
+            run: function() {
+                const timeout = (options.timeout || 30000);
+                let waited = (state.startedAt ? Date.now() - state.startedAt : 0);
+                const interval = 100;
+
+                while (!state.isDone) {
+                    if (waited >= timeout) {
+                        callback(new Error("Timeout: Failed to get HTML within " + (timeout / 1000) + " seconds."), null);
+                        return;
+                    }
+
+                    java.lang.Thread.sleep(interval);
+                }
+
+                if (state.error) {
+                    callback(new Error(state.error), null);
+                } else {
+                    var finalHtml = state.html;
+                    if (finalHtml && finalHtml.startsWith('"') && finalHtml.endsWith('"')) {
+                        finalHtml = finalHtml.substring(1, finalHtml.length - 1)
+                            .replace(/\\u([\dA-F]{4})/gi, (_, code) => String.fromCharCode(parseInt(code, 16)))
+                            .replace(/\\"/g, '"')
+                            .replace(/\\n/g, '\n')
+                            .replace(/\\r/g, '\r')
+                            .replace(/\\t/g, '\t');
+                    }
+                    callback(null, finalHtml);
+                }
+            }
+        })).start();
+    })();
+
 }
 
 /** html2md. html을 마크다운으로 변환하는 함수.
@@ -189,8 +197,8 @@ function getHtml(url, callback, options = {}) {
 function html2md(html, url) {
 
     let extractedJsonData = [];
+    let imagePlaceholders = [];
     let tablePlaceholders = [];
-
     //html = html.replace(/(<tbody[\s\S]*?<\/tbody>)/gi, '<table>$1</table>');
     html = html.replace(/<ruby[\s\S]*?<\/ruby>/gi, function(ruby) {
         return ruby.replace(/<rp>[\s\S]*?<\/rp>/gi, '').replace(/<rt>([\s\S]*?)<\/rt>/gi, '($1)').replace(/<[^>]+>/g, '');
@@ -225,6 +233,33 @@ function html2md(html, url) {
         }
         return '';
     });
+
+processedHtml = processedHtml.replace(/<table((?!<table)[\s\S])*?<\/table>/gi, function(tableHtml) {
+    return tableHtml.replace(/<img[^>]*>/gi, function(imgTag) {
+        const srcMatch = imgTag.match(/src="([^"]*)"/);
+        const altMatch = imgTag.match(/alt="([^"]*)"/);
+
+        let src = srcMatch ? srcMatch[1].trim() : '';
+        const alt = altMatch ? altMatch[1].replace(/\n/g, '') : '';
+
+        if (!src || src.startsWith('data:image')) return '';
+
+        try {
+            const f = u =>
+                /https?:\/\/[^\/]+\/?$/.test(u) ?
+                    u.endsWith('/') ? u : u + '/' :
+                !u.endsWith('/') ?
+                    (u.split('/').pop().includes('.') ? u.slice(0, u.lastIndexOf('/') + 1) : u + '/') :
+                    u;
+            src = new java.net.URL(new java.net.URL(f(url)), src).toString();
+        } catch (e) {
+        }
+
+        const placeholder = `__IMG_PLACEHOLDER_${imagePlaceholders.length}__`;
+        imagePlaceholders.push(`![${alt}](${src})`);
+        return placeholder;
+    });
+});
 
     const cellToMarkdown = (cellHtml) => {
         let content = cellHtml.replace(/<t[dh][^>]*>([\s\S]*)<\/t[dh]>/i, '$1').trim();
@@ -290,14 +325,14 @@ function html2md(html, url) {
         });
     }
 
-    markdown = processedHtml;
+    let markdown = processedHtml;
 
     markdown = markdown.replace(/<img[^>]*>/gi, function(imgTag) {
         const srcMatch = imgTag.match(/src="([^"]*)"/);
         const altMatch = imgTag.match(/alt="([^"]*)"/);
 
         let src = srcMatch ? srcMatch[1].trim() : '';
-        const alt = altMatch ? altMatch[1] : '';
+        const alt = altMatch ? altMatch[1].replace(/\n/g, '') : '';
 
         if (!src || src.startsWith('data:image')) {
             return '';
@@ -311,7 +346,6 @@ function html2md(html, url) {
                 (u.split('/').pop().includes('.') ? u.slice(0, u.lastIndexOf('/') + 1) : u + '/') :
                 u;
             src = new java.net.URL(new java.net.URL(f(url)), src).toString();
-            Log.e(src);
         } catch (e) {
             return `![${alt}](${src})\n`;;
         }
@@ -336,12 +370,22 @@ function html2md(html, url) {
         });
     });
 
-    tablePlaceholders.forEach((md, i) => {
-        markdown = markdown.replace(new RegExp(`__TABLE_PLACEHOLDER_${i}__`, 'g'), md);
-    });
+    while (/__TABLE_PLACEHOLDER_\d+__/.test(markdown)) {
+        tablePlaceholders.forEach((md, i) => {
+            markdown = markdown.replace(new RegExp(`__TABLE_PLACEHOLDER_${i}__`, 'g'), md);
 
-    markdown = markdown.replace(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => `[${text.replace(/\n/g, '')}](${href.replace(/\n/g, '')})`);
+imagePlaceholders.forEach((md, i) => {
+    markdown = markdown.replace(new RegExp(`__IMG_PLACEHOLDER_${i}__`, 'g'), md);
+});
+        });
+    };
 
+    markdown = markdown.replace(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => {
+    try {
+        href = new java.net.URL(new java.net.URL(url), href.trim()).toString();
+    } catch (e) {}
+    return `[${text.replace(/\n/g, '')}](${href})`;
+});
     markdown = markdown.replace(/<(strong|b)>(.*?)<\/\1>/gi, '**$2**');
     markdown = markdown.replace(/<(em|i)>(.*?)<\/\1>/gi, '*$2*');
 
@@ -363,10 +407,7 @@ function html2md(html, url) {
 
     markdown = markdown.replace(/^[ \t]+/gm, '');
     markdown = markdown.replace(/(\s*\n){3,}/g, '\n\n');
-
-    tablePlaceholders.forEach((md, i) => {
-        markdown = markdown.replace(new RegExp(`__TABLE_PLACEHOLDER_${i}__`, 'g'), md);
-    });
+    markdown = markdown.replace(/\n\|\s*\|\n\|[-| ]+\|/g, '');
 
     return markdown.trim().replace(/&nbsp;/g, '');
 }
@@ -378,10 +419,13 @@ function html2md(html, url) {
  * @param {Object} options(maxwt(ms), timeout(ms))
  */
 function dh2md(url, callback, options = {}) {
+    options.debug && console.log("시작")
     getHtml(url, (err, html) => {
         if (err) return callback(err, null);
+        options.debug && console.log("html 가져옴.");
         let markdown = html2md(html, url);
         callback(null, markdown);
+        options.debug && console.log("마크다운 처리 끝")
     }, options);
 }
 

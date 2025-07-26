@@ -18,11 +18,11 @@ if (typeof App == 'undefined' && typeof Api != 'undefined') {
     }
 }
 
-let console = console || {
+console = (typeof console != 'undefined') ? console : ({
     log: function(a, b) {
-        Log.d(a, b)
+        Log.d(a, b);
     }
-};
+});
 
 /**
  * getHtml. 웹뷰 기반으로 동적 웹페이지의 HTML을 가져오는 함수.
